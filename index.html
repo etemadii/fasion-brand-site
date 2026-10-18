@@ -1,1 +1,977 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>آویژه | پوشاک زنانه ایرانی (نسخه نمونه)</title>
+<meta name="description" content="آویژه، برند نمونه پوشاک زنانه ایرانی: مانتو، پیراهن، شومیز، شلوار، دامن و شال با دوخت دقیق. مشاهده کاتالوگ و ثبت سفارش از طریق سایت یا واتساپ.">
+<meta name="keywords" content="پوشاک زنانه, مانتو, پیراهن زنانه, شومیز, شال, برند ایرانی, خرید مانتو">
+<!-- تا وقتی اطلاعات نمونه است، سایت ایندکس نشود. هنگام انتشار واقعی به "index, follow" تغییر دهید. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#131C35">
+<meta name="format-detection" content="telephone=no">
+<!-- آدرس واقعی دامنه را جایگزین کنید -->
+<link rel="canonical" href="https://example.com/">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="آویژه">
+<meta property="og:title" content="آویژه | پوشاک زنانه ایرانی">
+<meta property="og:description" content="کاتالوگ پوشاک زنانه با ثبت سفارش از طریق سایت و واتساپ.">
+<!-- <meta property="og:image" content="https://example.com/images/og-cover.jpg"> -->
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23131C35'/%3E%3Cpath d='M18 56V30a14 14 0 0 1 28 0v26' fill='none' stroke='%23F5F0E6' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@500;600;700&family=Vazirmatn:wght@300;400;500;700&display=swap">
+
+<style>
+/* =========================================================
+   رنگ‌ها و فونت‌ها (رنگ‌ها از بخش CONFIG در جاوااسکریپت هم قابل تغییرند)
+   ========================================================= */
+:root{
+  --cream:#F5F0E6;
+  --paper:#FBF8F2;
+  --sand:#E6DCCB;
+  --navy:#131C35;
+  --navy-2:#1F2B4D;
+  --charcoal:#2A2826;
+  --muted:#5C564E;
+  --brass:#9A7340;
+  --brass-text:#6E4F22;
+  --line:rgba(19,28,53,.16);
+  --display:"Noto Naskh Arabic","Vazirmatn",serif;
+  --body:"Vazirmatn",Tahoma,"Segoe UI",sans-serif;
+  --wrap:1200px;
+  --gutter:clamp(1.25rem,5vw,3rem);
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--cream);color:var(--charcoal);
+  font-family:var(--body);font-size:1rem;line-height:1.9;font-weight:400;
+  text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:600;color:var(--navy);margin:0;line-height:1.45}
+p{margin:0}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:absolute;inset-inline-start:1rem;top:-4rem;background:var(--navy);color:var(--cream);padding:.6rem 1rem;z-index:100;text-decoration:none}
+.skip:focus{top:1rem}
+.wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gutter)}
+.section{padding-block:clamp(4.5rem,11vw,8.5rem)}
+.sample-tag{
+  display:inline-block;font-family:var(--body);font-size:.875rem;font-weight:500;line-height:1.6;
+  padding:.05rem .55rem;border:1px solid currentColor;border-radius:99px;color:var(--brass-text);vertical-align:middle;
+}
+
+/* ---------- نوار حالت نمونه ---------- */
+.demo-bar{background:var(--navy);color:var(--cream);font-size:.875rem;text-align:center;padding:.55rem var(--gutter);line-height:1.7}
+.demo-bar strong{color:#E9C892;font-weight:500}
+
+/* ---------- هدر ---------- */
+.site-header{position:sticky;top:0;z-index:40;background:rgba(245,240,230,.94);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid transparent;transition:border-color .3s}
+.site-header.scrolled{border-bottom-color:var(--line)}
+.header-row{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:4.5rem}
+.logo{display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;line-height:1.1}
+.logo-fa{font-family:var(--display);font-weight:700;font-size:1.75rem;color:var(--navy)}
+.logo-en{font-family:var(--body);font-size:.75rem;letter-spacing:.42em;color:var(--brass-text);direction:ltr;margin-top:.15rem;font-weight:500}
+.nav{display:none}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:2rem}
+.nav a{text-decoration:none;font-size:.95rem;color:var(--charcoal);position:relative;padding-block:.4rem}
+.nav a::after{content:"";position:absolute;inset-inline:0;bottom:0;height:1px;background:var(--navy);transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ease)}
+.nav a:hover::after{transform:scaleX(1)}
+.header-tools{display:flex;align-items:center;gap:.5rem}
+.icon-btn{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;min-width:44px;min-height:44px;padding:0 .7rem;border:1px solid var(--line);background:transparent;border-radius:99px;cursor:pointer;text-decoration:none;font-size:.9rem;color:var(--navy);transition:background .25s,border-color .25s}
+.icon-btn:hover{background:var(--paper);border-color:var(--navy)}
+.cart-count{min-width:1.4rem;height:1.4rem;padding:0 .3rem;border-radius:99px;background:var(--navy);color:var(--cream);font-size:.78rem;display:inline-flex;align-items:center;justify-content:center;line-height:1}
+.menu-btn .bars{width:18px;height:10px;position:relative}
+.menu-btn .bars::before,.menu-btn .bars::after{content:"";position:absolute;inset-inline:0;height:1.5px;background:var(--navy);transition:transform .3s var(--ease),top .3s}
+.menu-btn .bars::before{top:0}.menu-btn .bars::after{top:8px}
+.menu-btn[aria-expanded="true"] .bars::before{top:4px;transform:rotate(45deg)}
+.menu-btn[aria-expanded="true"] .bars::after{top:4px;transform:rotate(-45deg)}
+.mobile-nav{border-top:1px solid var(--line);background:var(--cream)}
+.mobile-nav ul{list-style:none;margin:0;padding:.5rem var(--gutter) 1.25rem}
+.mobile-nav a{display:block;padding:.85rem 0;text-decoration:none;font-family:var(--display);font-size:1.3rem;color:var(--navy);border-bottom:1px solid var(--line)}
+@media (min-width:900px){
+  .nav{display:block}
+  .menu-btn,.mobile-nav{display:none!important}
+}
+
+/* ---------- دکمه‌ها ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:48px;padding:.7rem 1.6rem;border-radius:99px;border:1px solid var(--navy);text-decoration:none;cursor:pointer;font-size:.95rem;font-weight:500;transition:background .3s var(--ease),color .3s var(--ease),transform .3s var(--ease)}
+.btn-primary{background:var(--navy);color:var(--cream)}
+.btn-primary:hover{background:var(--navy-2)}
+.btn-ghost{background:transparent;color:var(--navy)}
+.btn-ghost:hover{background:var(--navy);color:var(--cream)}
+.btn:active{transform:translateY(1px)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* ---------- هیرو ---------- */
+.hero{padding-block:clamp(2.5rem,7vw,5rem) clamp(4rem,9vw,7rem);overflow:hidden}
+.hero-grid{display:grid;gap:2.75rem;align-items:center}
+.hero-kicker{font-size:.95rem;color:var(--muted);margin-bottom:1.1rem;display:flex;align-items:center;gap:.7rem;flex-wrap:wrap}
+.hero-kicker::before{content:"";width:2.5rem;height:1px;background:var(--brass)}
+.hero h1{font-size:clamp(2.6rem,9.5vw,5.8rem);line-height:1.3;font-weight:600;letter-spacing:-.01em}
+.hero h1 em{font-style:normal;color:var(--brass)}
+.hero-lead{margin-top:1.4rem;max-width:30rem;font-size:1.075rem;color:var(--muted)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem}
+.hero-figure{position:relative;margin:0;justify-self:center;width:min(100%,430px)}
+.arch{border-radius:999px 999px 0 0;overflow:hidden;position:relative}
+.hero-arch{aspect-ratio:3/4;background:var(--navy);display:grid;place-items:center}
+.hero-arch img{width:100%;height:100%;object-fit:cover}
+.hero-arch .garment{width:62%;transform-origin:50% 8%;animation:sway 7s ease-in-out infinite}
+.hero-figure::before{content:"";position:absolute;inset:-14px -14px 14px 14px;border:1px solid var(--brass);border-radius:999px 999px 0 0;pointer-events:none;opacity:.7}
+.hero-figure figcaption{position:absolute;bottom:1.25rem;inset-inline-end:-.5rem;background:var(--cream);color:var(--navy);padding:.6rem 1.1rem;font-size:.875rem;line-height:1.6;box-shadow:0 10px 30px -18px rgba(19,28,53,.5)}
+@keyframes sway{0%,100%{transform:rotate(-1.6deg)}50%{transform:rotate(1.6deg)}}
+@media (min-width:900px){
+  .hero-grid{grid-template-columns:1.15fr .85fr;gap:4rem}
+  .hero-figure{justify-self:end}
+}
+
+/* ---------- عنوان بخش‌ها ---------- */
+.section-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1rem 2rem;margin-bottom:clamp(2rem,5vw,3.5rem)}
+.section-head h2{font-size:clamp(2rem,5.5vw,3.4rem)}
+.section-head p{color:var(--muted);max-width:28rem}
+
+/* ---------- کالکشن جدید ---------- */
+.collections{background:var(--paper)}
+.collection-grid{display:grid;gap:1.5rem}
+.collection{all:unset;cursor:pointer;display:block;text-align:right}
+.collection .arch{aspect-ratio:4/5;background:var(--sand);display:grid;place-items:center;transition:background .5s var(--ease)}
+.collection .arch .garment,.collection .arch img{transition:transform .9s var(--ease)}
+.collection .arch .garment{width:58%}
+.collection .arch img{width:100%;height:100%;object-fit:cover}
+.collection:hover .arch .garment,.collection:hover .arch img{transform:scale(1.04)}
+.collection:focus-visible .arch{outline:2px solid var(--brass);outline-offset:4px}
+.collection h3{font-size:1.6rem;margin-top:1.1rem}
+.collection p{color:var(--muted);font-size:.95rem}
+.collection .go{display:inline-flex;margin-top:.5rem;font-size:.9rem;color:var(--navy);border-bottom:1px solid var(--navy);padding-bottom:.1rem}
+@media (min-width:640px){.collection-grid{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:900px){.collection:nth-child(2){margin-top:4rem}}
+
+/* ---------- محصولات ---------- */
+.toolbar{display:grid;gap:1rem;margin-bottom:2rem}
+.search{position:relative}
+.search input{width:100%;min-height:50px;padding:.7rem 3rem .7rem 1.1rem;border:1px solid var(--line);border-radius:99px;background:var(--paper);font-size:1rem}
+.search input::placeholder{color:#7A736A}
+.search input:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(154,115,64,.25)}
+.search svg{position:absolute;inset-inline-start:1.1rem;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--muted)}
+.chips{display:flex;gap:.5rem;overflow-x:auto;padding-bottom:.25rem;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;min-height:42px;padding:.4rem 1.15rem;border-radius:99px;border:1px solid var(--line);background:transparent;cursor:pointer;font-size:.92rem;color:var(--charcoal);transition:all .25s}
+.chip:hover{border-color:var(--navy)}
+.chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:var(--cream)}
+@media (min-width:900px){.toolbar{grid-template-columns:1fr 340px;align-items:center}.chips{flex-wrap:wrap}}
+.result-line{font-size:.9rem;color:var(--muted);margin-bottom:1.5rem}
+.grid{display:grid;gap:3rem 1.75rem}
+@media (min-width:560px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:980px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{display:flex;flex-direction:column}
+.card-media{aspect-ratio:4/5;background:var(--sand);display:grid;place-items:center;position:relative}
+.card-media .garment{width:56%;transition:transform .8s var(--ease)}
+.card-media img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.card:hover .card-media .garment,.card:hover .card-media img{transform:scale(1.04)}
+.badge{position:absolute;top:auto;bottom:1rem;inset-inline-start:1rem;background:var(--cream);color:var(--navy);font-size:.8rem;padding:.15rem .7rem;border-radius:99px;font-weight:500}
+.card-body{padding-top:1.2rem;display:flex;flex-direction:column;gap:.85rem;flex:1}
+.card-cat{font-size:.85rem;color:var(--brass-text);font-weight:500}
+.card h3{font-size:1.45rem;line-height:1.5}
+.card-desc{color:var(--muted);font-size:.95rem}
+.price{font-size:.95rem;color:var(--navy);font-weight:500}
+.price small{font-weight:400;color:var(--muted);font-size:.85rem}
+.opts{border:0;margin:0;padding:0}
+.opts legend{font-size:.875rem;color:var(--muted);padding:0;margin-bottom:.45rem}
+.opts legend b{color:var(--charcoal);font-weight:500}
+.swatches,.sizes{display:flex;flex-wrap:wrap;gap:.45rem}
+.swatch input,.size input{position:absolute;opacity:0;width:1px;height:1px}
+.swatch span{display:block;width:30px;height:30px;border-radius:50%;border:1px solid rgba(19,28,53,.25);box-shadow:inset 0 0 0 3px var(--cream);cursor:pointer;transition:box-shadow .2s}
+.swatch input:checked+span{box-shadow:inset 0 0 0 3px var(--cream),0 0 0 1.5px var(--navy)}
+.swatch input:focus-visible+span{outline:2px solid var(--brass);outline-offset:3px}
+.size span{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:36px;padding:0 .6rem;border:1px solid var(--line);border-radius:6px;font-size:.85rem;cursor:pointer;direction:ltr;transition:all .2s}
+.size input:checked+span{background:var(--navy);color:var(--cream);border-color:var(--navy)}
+.size input:focus-visible+span{outline:2px solid var(--brass);outline-offset:2px}
+.card-actions{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:auto;padding-top:.4rem}
+.card-actions .btn{padding-inline:.8rem;font-size:.9rem;min-height:46px}
+.empty{padding:3rem 1rem;text-align:center;color:var(--muted);border:1px dashed var(--line)}
+
+/* ---------- معرفی برند ---------- */
+.story{background:var(--navy);color:var(--cream)}
+.story-grid{display:grid;gap:3rem}
+.story blockquote{margin:0;font-family:var(--display);font-size:clamp(1.9rem,5.5vw,3.3rem);line-height:1.6;color:var(--cream);font-weight:500}
+.story blockquote span{color:#D9B57E}
+.story-text{color:rgba(245,240,230,.82);font-size:1.05rem;display:grid;gap:1.25rem;align-content:start}
+.values{list-style:none;margin:1rem 0 0;padding:0;display:grid;gap:1.25rem}
+.values li{padding-inline-start:1.25rem;border-inline-start:1px solid #D9B57E}
+.values b{display:block;font-family:var(--display);font-size:1.25rem;font-weight:600;color:var(--cream)}
+.story .sample-tag{color:#D9B57E}
+@media (min-width:900px){.story-grid{grid-template-columns:1.2fr .8fr;gap:6rem}}
+
+/* ---------- راهنمای سفارش ---------- */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:2.5rem;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding-top:4.2rem}
+.steps li::before{content:counter(s,persian);position:absolute;top:0;inset-inline-start:0;font-family:var(--display);font-size:3.2rem;line-height:1;color:var(--brass)}
+.steps h3{font-size:1.35rem;margin-bottom:.4rem}
+.steps p{color:var(--muted)}
+.notice{margin-top:3rem;padding:1.25rem 1.5rem;background:var(--paper);border-inline-start:2px solid var(--navy);color:var(--charcoal);font-size:.98rem}
+@media (min-width:760px){.steps{grid-template-columns:repeat(4,1fr);gap:2rem}}
+
+/* ---------- ثبت سفارش ---------- */
+.order{background:var(--paper)}
+.order-grid{display:grid;gap:2.5rem}
+@media (min-width:980px){.order-grid{grid-template-columns:.9fr 1.1fr;gap:4rem;align-items:start}}
+.panel{background:var(--cream);padding:clamp(1.5rem,4vw,2.5rem);border:1px solid var(--line)}
+.panel h3{font-size:1.5rem;margin-bottom:1.25rem}
+.cart-list{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.cart-item{display:grid;grid-template-columns:56px 1fr auto;gap:.9rem;align-items:center;padding:1rem 0;border-bottom:1px solid var(--line)}
+.cart-item:first-child{padding-top:0}
+.cart-thumb{width:56px;aspect-ratio:4/5;background:var(--sand);border-radius:999px 999px 0 0;display:grid;place-items:center;overflow:hidden}
+.cart-thumb .garment{width:62%}
+.cart-thumb img{width:100%;height:100%;object-fit:cover}
+.cart-item b{font-weight:500;color:var(--navy);display:block;line-height:1.6}
+.cart-item small{color:var(--muted);font-size:.85rem}
+.qty{display:flex;align-items:center;gap:.25rem}
+.qty button{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:transparent;cursor:pointer;line-height:1;font-size:1rem}
+.qty button:hover{border-color:var(--navy)}
+.qty output{min-width:1.6rem;text-align:center;font-size:.95rem}
+.remove{background:none;border:0;padding:0;color:var(--muted);font-size:.85rem;cursor:pointer;text-decoration:underline;text-underline-offset:3px;margin-top:.1rem}
+.cart-empty{color:var(--muted);font-size:.98rem}
+.cart-note{margin-top:1.25rem;font-size:.9rem;color:var(--muted)}
+.form{display:grid;gap:1.1rem}
+.field{display:grid;gap:.35rem}
+.field label,.field legend{font-size:.92rem;color:var(--charcoal);font-weight:500}
+.field .req{color:#9B3B2A}
+.field input,.field textarea{width:100%;min-height:50px;padding:.7rem 1rem;border:1px solid rgba(19,28,53,.28);border-radius:6px;background:var(--paper);font-size:1rem}
+.field textarea{min-height:110px;resize:vertical;line-height:1.8}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(154,115,64,.25)}
+.field input[aria-invalid="true"]{border-color:#9B3B2A}
+.field .err{color:#9B3B2A;font-size:.85rem;min-height:0}
+.field .hint{color:var(--muted);font-size:.85rem}
+.row2{display:grid;gap:1.1rem}
+@media (min-width:560px){.row2{grid-template-columns:1fr 1fr}}
+.ltr{direction:ltr;text-align:right}
+.channels{border:0;margin:0;padding:0;display:grid;gap:.5rem}
+.channel{display:flex;align-items:flex-start;gap:.75rem;padding:.85rem 1rem;border:1px solid var(--line);border-radius:6px;cursor:pointer;background:var(--paper)}
+.channel input{margin-top:.45rem;accent-color:var(--navy);width:18px;height:18px}
+.channel b{display:block;font-weight:500}
+.channel small{color:var(--muted);font-size:.85rem;line-height:1.6;display:block}
+.channel:has(input:checked){border-color:var(--navy);box-shadow:inset 0 0 0 1px var(--navy)}
+.channel:has(input:disabled){opacity:.6;cursor:not-allowed}
+.consent{display:flex;gap:.6rem;align-items:flex-start;font-size:.92rem;color:var(--muted)}
+.consent input{margin-top:.4rem;accent-color:var(--navy);width:18px;height:18px;flex:none}
+.form-status{font-size:.95rem}
+.result{display:none;padding:1.5rem;border:1px solid var(--navy);background:var(--paper)}
+.result.show{display:block;animation:rise .6s var(--ease)}
+.result h4{font-family:var(--display);font-size:1.4rem;color:var(--navy);margin:0 0 .5rem;font-weight:600}
+.result code{font-family:var(--body);direction:ltr;display:inline-block;background:var(--sand);padding:.05rem .5rem;border-radius:4px;color:var(--navy);font-weight:500}
+.result .btns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.result .btn{min-height:42px;padding:.5rem 1.1rem;font-size:.88rem}
+
+/* ---------- فوتر ---------- */
+.site-footer{background:var(--charcoal);color:rgba(245,240,230,.85);padding-block:4rem 2rem;font-size:.95rem}
+.footer-grid{display:grid;gap:2.5rem}
+.site-footer .logo-fa{color:var(--cream)}
+.site-footer h2{font-family:var(--body);font-size:.9rem;font-weight:500;color:#F0CF9A;margin-bottom:.9rem}
+.site-footer ul{list-style:none;margin:0;padding:0;display:grid;gap:.45rem}
+.site-footer a{text-decoration:none;border-bottom:1px solid transparent}
+.site-footer a:hover{border-bottom-color:currentColor}
+.site-footer .muted{color:rgba(245,240,230,.82)}
+.foot-bottom{margin-top:3rem;padding-top:1.5rem;border-top:1px solid rgba(245,240,230,.15);display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75rem;font-size:.875rem;color:rgba(245,240,230,.82)}
+@media (min-width:760px){.footer-grid{grid-template-columns:1.4fr 1fr 1fr 1fr}}
+
+/* ---------- اعلان و دکمه شناور ---------- */
+.toast{position:fixed;bottom:calc(1.25rem + env(safe-area-inset-bottom));left:50%;transform:translate(-50%,150%);background:var(--navy);color:var(--cream);padding:.8rem 1.3rem;border-radius:10px;font-size:.92rem;max-width:min(92vw,460px);z-index:60;transition:transform .45s var(--ease);box-shadow:0 18px 40px -20px rgba(0,0,0,.6);text-align:center;line-height:1.7}
+.toast.show{transform:translate(-50%,0)}
+.wa-float{position:fixed;bottom:calc(1.25rem + env(safe-area-inset-bottom));left:1.25rem;width:54px;height:54px;border-radius:50%;background:var(--navy);color:var(--cream);display:grid;place-items:center;z-index:50;box-shadow:0 14px 30px -14px rgba(19,28,53,.8);text-decoration:none;border:1px solid rgba(245,240,230,.2);cursor:pointer}
+.wa-float svg{width:24px;height:24px}
+
+/* ---------- انیمیشن ورود ---------- */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+@media print{.site-header,.wa-float,.toast,.demo-bar{display:none}}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">رفتن به محتوای اصلی</a>
+
+<div class="demo-bar" id="demoBar" role="note">
+  <strong>نسخه نمونه:</strong> نام برند، تصاویر، محصولات، رنگ‌ها، سایزها و اطلاعات تماس فعلاً نمونه‌اند و قیمت یا موجودی واقعی اعلام نشده است.
+</div>
+
+<header class="site-header" id="top">
+  <div class="wrap header-row">
+    <a class="logo" href="#top" aria-label="صفحه اصلی">
+      <span class="logo-fa" data-brand>آویژه</span>
+      <span class="logo-en" data-brand-latin>AVIZHEH</span>
+    </a>
+    <nav class="nav" aria-label="منوی اصلی">
+      <ul>
+        <li><a href="#collections">کالکشن جدید</a></li>
+        <li><a href="#products">محصولات</a></li>
+        <li><a href="#story">درباره ما</a></li>
+        <li><a href="#guide">راهنمای سفارش</a></li>
+        <li><a href="#contact">تماس</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <a class="icon-btn" href="#order" aria-label="سبد سفارش">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-count" id="cartCount" aria-live="polite">۰</span>
+      </a>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav" aria-label="باز کردن منو">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="منوی موبایل" hidden>
+    <ul>
+      <li><a href="#collections">کالکشن جدید</a></li>
+      <li><a href="#products">محصولات</a></li>
+      <li><a href="#story">درباره ما</a></li>
+      <li><a href="#guide">راهنمای سفارش</a></li>
+      <li><a href="#order">ثبت سفارش</a></li>
+      <li><a href="#contact">تماس</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- هیرو / تصویر شاخص -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <p class="hero-kicker"><span id="heroKicker">کالکشن پاییز ۱۴۰۵</span> <span class="sample-tag">نمونه</span></p>
+        <h1 id="heroTitle">ظرافت،<br>آرام <em>دوخته</em> می‌شود</h1>
+        <p class="hero-lead" id="heroLead">پوشاک زنانه با خطوط ساده، پارچه‌های خوش‌دست و دوختی که برای سال‌ها پوشیدن ساخته شده است.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#products">مشاهده محصولات</a>
+          <a class="btn btn-ghost" href="#guide">راهنمای سفارش</a>
+        </div>
+      </div>
+      <figure class="hero-figure reveal">
+        <div class="arch hero-arch" id="heroMedia"></div>
+        <figcaption>تصویر نمونه، جایگزین با عکس واقعی</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- کالکشن جدید -->
+  <section class="section collections" id="collections" aria-labelledby="colTitle">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 id="colTitle">کالکشن جدید</h2>
+        <p>سه خط اصلی این فصل. روی هر کدام بزنید تا محصولاتش نمایش داده شود.</p>
+      </div>
+      <div class="collection-grid" id="collectionGrid"></div>
+    </div>
+  </section>
+
+  <!-- محصولات منتخب -->
+  <section class="section" id="products" aria-labelledby="prodTitle">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 id="prodTitle">محصولات منتخب</h2>
+        <p>رنگ و سایز را انتخاب کنید، سپس مستقیم در واتساپ سفارش دهید یا به فرم سفارش اضافه کنید.</p>
+      </div>
+      <div class="toolbar">
+        <div class="chips" role="group" aria-label="فیلتر دسته‌بندی" id="chips"></div>
+        <div class="search">
+          <label for="q" class="visually-hidden">جست‌وجوی محصول</label>
+          <input id="q" type="search" placeholder="جست‌وجو: مانتو، کتان، سرمه‌ای…" autocomplete="off">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </div>
+      </div>
+      <p class="result-line" id="resultLine" aria-live="polite"></p>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <!-- معرفی برند -->
+  <section class="section story" id="story" aria-labelledby="storyTitle">
+    <div class="wrap story-grid">
+      <div class="reveal">
+        <h2 id="storyTitle" class="visually-hidden">درباره برند</h2>
+        <blockquote>لباسی که با تو <span>آرام</span> می‌شود، نه لباسی که برای یک فصل هیاهو کند.</blockquote>
+      </div>
+      <div class="story-text reveal">
+        <p><span class="sample-tag">متن نمونه</span></p>
+        <p id="storyText">ما یک کارگاه تولید پوشاک زنانه در ایران هستیم. هر مدل در تیراژ محدود الگوسازی و دوخته می‌شود تا کیفیت دوخت و تناسب اندام، پیش از هر چیز دیگر دیده شود.</p>
+        <ul class="values">
+          <li><b>دوخت ایرانی</b>طراحی، الگو و تولید در کارگاه خودمان.</li>
+          <li><b>پارچه منتخب</b>کتان، کرپ و نخ با دست‌خورد نرم و دوام بالا.</li>
+          <li><b>تیراژ محدود</b>هر مدل در تعداد کم، برای پوشیدنی متفاوت.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- راهنمای سفارش -->
+  <section class="section" id="guide" aria-labelledby="guideTitle">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 id="guideTitle">راهنمای سفارش</h2>
+        <p>سفارش در چهار قدم، بدون پرداخت آنلاین.</p>
+      </div>
+      <ol class="steps reveal">
+        <li><h3>انتخاب محصول</h3><p>رنگ و سایز دلخواه را روی کارت محصول انتخاب کنید.</p></li>
+        <li><h3>ثبت درخواست</h3><p>«سفارش در واتساپ» را بزنید یا محصول را به فرم سفارش سایت اضافه کنید.</p></li>
+        <li><h3>تأیید فروشنده</h3><p>موجودی، قیمت نهایی و هزینه ارسال توسط فروشنده به شما اعلام می‌شود.</p></li>
+        <li><h3>پرداخت و ارسال</h3><p>روش پرداخت و ارسال مستقیماً با فروشنده هماهنگ می‌شود.</p></li>
+      </ol>
+      <p class="notice reveal">این سایت پرداخت آنلاین ندارد. ثبت درخواست به معنای قطعی‌شدن سفارش نیست و سفارش فقط پس از تأیید فروشنده نهایی می‌شود.</p>
+    </div>
+  </section>
+
+  <!-- ثبت سفارش از طریق سایت -->
+  <section class="section order" id="order" aria-labelledby="orderTitle">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 id="orderTitle">ثبت سفارش از سایت</h2>
+        <p>فرم را پر کنید تا جزئیات سفارش برای فروشنده ارسال شود.</p>
+      </div>
+      <div class="order-grid">
+        <div class="panel reveal" aria-labelledby="cartTitle">
+          <h3 id="cartTitle">سبد سفارش شما</h3>
+          <ul class="cart-list" id="cartList"></ul>
+          <p class="cart-note">قیمت نهایی، موجودی و هزینه ارسال پس از بررسی توسط فروشنده اعلام می‌شود.</p>
+        </div>
+
+        <div class="panel reveal">
+          <h3>مشخصات گیرنده</h3>
+          <form class="form" id="orderForm" novalidate>
+            <div class="row2">
+              <div class="field">
+                <label for="fName">نام و نام خانوادگی <span class="req" aria-hidden="true">*</span></label>
+                <input id="fName" name="name" autocomplete="name" required aria-describedby="eName">
+                <span class="err" id="eName"></span>
+              </div>
+              <div class="field">
+                <label for="fPhone">شماره موبایل <span class="req" aria-hidden="true">*</span></label>
+                <input id="fPhone" name="phone" class="ltr" inputmode="tel" autocomplete="tel" placeholder="09xxxxxxxxx" required aria-describedby="ePhone">
+                <span class="err" id="ePhone"></span>
+              </div>
+            </div>
+            <div class="row2">
+              <div class="field">
+                <label for="fCity">استان و شهر <span class="req" aria-hidden="true">*</span></label>
+                <input id="fCity" name="city" autocomplete="address-level2" required aria-describedby="eCity">
+                <span class="err" id="eCity"></span>
+              </div>
+              <div class="field">
+                <label for="fPostal">کد پستی (اختیاری)</label>
+                <input id="fPostal" name="postal" class="ltr" inputmode="numeric" autocomplete="postal-code">
+              </div>
+            </div>
+            <div class="field">
+              <label for="fAddress">نشانی کامل <span class="req" aria-hidden="true">*</span></label>
+              <input id="fAddress" name="address" autocomplete="street-address" required aria-describedby="eAddress">
+              <span class="err" id="eAddress"></span>
+            </div>
+            <div class="field">
+              <label for="fNote">توضیحات (اختیاری)</label>
+              <textarea id="fNote" name="note" placeholder="مثلاً قد، سایز معمول یا زمان مناسب تماس"></textarea>
+            </div>
+            <fieldset class="channels field">
+              <legend>مسیر ارسال سفارش</legend>
+              <label class="channel"><input type="radio" name="channel" value="whatsapp" checked><span><b>واتساپ</b><small>پیام سفارش آماده می‌شود و فقط کافی است آن را ارسال کنید.</small></span></label>
+              <label class="channel" id="chEmailWrap"><input type="radio" name="channel" value="email" id="chEmail"><span><b>ایمیل</b><small id="chEmailHint">برنامه ایمیل شما با متن سفارش باز می‌شود.</small></span></label>
+              <label class="channel" id="chWebWrap"><input type="radio" name="channel" value="web" id="chWeb"><span><b>ارسال مستقیم از سایت</b><small id="chWebHint">فرم مستقیماً برای فروشنده فرستاده می‌شود.</small></span></label>
+            </fieldset>
+            <label class="consent"><input type="checkbox" id="fConsent" required> <span>می‌دانم این ثبت، درخواست سفارش است و پرداخت و قطعی‌شدن آن پس از تأیید فروشنده انجام می‌شود.</span></label>
+            <span class="err form-status" id="formStatus" role="alert"></span>
+            <button class="btn btn-primary" type="submit" id="submitBtn">ثبت و ارسال سفارش</button>
+          </form>
+          <div class="result" id="result" tabindex="-1" aria-live="polite">
+            <h4>درخواست سفارش آماده شد</h4>
+            <p>کد مرجع: <code id="orderCode"></code></p>
+            <p id="resultMsg" style="margin-top:.5rem;color:var(--muted);font-size:.95rem"></p>
+            <div class="btns">
+              <button class="btn btn-ghost" type="button" id="copyOrder">کپی متن سفارش</button>
+              <button class="btn btn-ghost" type="button" id="clearCart">خالی کردن سبد</button>
+              <button class="btn btn-ghost" type="button" id="newOrder">ویرایش یا سفارش جدید</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <span class="logo-fa" data-brand>آویژه</span>
+        <p class="muted" style="margin-top:.75rem;max-width:22rem" id="footerTagline">پوشاک زنانه، طراحی و دوخت ایران.</p>
+      </div>
+      <div>
+        <h2>تماس</h2>
+        <ul id="contactList"></ul>
+      </div>
+      <div>
+        <h2>شبکه‌های اجتماعی</h2>
+        <ul id="socialList"></ul>
+      </div>
+      <div>
+        <h2>دسترسی سریع</h2>
+        <ul>
+          <li><a href="#products">محصولات</a></li>
+          <li><a href="#guide">راهنمای سفارش</a></li>
+          <li><a href="#order">ثبت سفارش</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span id="copyright"></span>
+      <span>پرداخت آنلاین در این سایت انجام نمی‌شود.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="wa-float" id="waFloat" type="button" aria-label="گفت‌وگو در واتساپ">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19l-4 1Z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8c-1-.5-1.8-1.3-2.3-2.3l.8-1-1-2L9 9.5Z" fill="currentColor" stroke="none"/></svg>
+</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* =========================================================
+   ⚙️ تنظیمات برند: فقط همین بخش را برای شخصی‌سازی تغییر دهید
+   ========================================================= */
+const CONFIG = {
+  // وقتی همه اطلاعات واقعی را وارد کردید، این را false کنید تا برچسب‌های «نمونه» حذف شوند
+  demoMode: true,
+
+  brand: {
+    name: "آویژه",                        // نام فارسی برند
+    latin: "AVIZHEH",                      // نام لاتین زیر لوگو
+    tagline: "پوشاک زنانه، طراحی و دوخت ایران.",
+    collectionLabel: "کالکشن پاییز ۱۴۰۵",
+    story: "ما یک کارگاه تولید پوشاک زنانه در ایران هستیم. هر مدل در تیراژ محدود الگوسازی و دوخته می‌شود تا کیفیت دوخت و تناسب اندام، پیش از هر چیز دیگر دیده شود."
+  },
+
+  contact: {
+    // شماره واتساپ با کد کشور و بدون صفر، + یا فاصله. مثال قالب: 989121234567
+    whatsapp: "",
+    phone: "",                            // مثال: 021-12345678
+    email: "",                            // مثال: order@yourbrand.ir
+    address: "",                          // مثال: تهران، خیابان ...
+    hours: ""                             // مثال: شنبه تا پنجشنبه، ۱۰ تا ۱۸
+  },
+
+  social: {
+    instagram: "",                        // فقط نام کاربری، مثال: yourbrand
+    telegram: ""                          // فقط نام کاربری کانال یا اکانت
+  },
+
+  order: {
+    // آدرس سرویس دریافت فرم (مثل Formspree یا Google Apps Script). خالی = غیرفعال
+    endpoint: "",
+    currency: "تومان"
+  },
+
+  // رنگ‌های اصلی سایت
+  colors: {
+    cream: "#F5F0E6",
+    paper: "#FBF8F2",
+    sand: "#E6DCCB",
+    navy: "#131C35",
+    navy2: "#1F2B4D",
+    charcoal: "#2A2826",
+    brass: "#9A7340"
+  },
+
+  // تصویر هیرو؛ مثال: "images/hero.jpg" . خالی = تصویرسازی نمونه
+  heroImage: ""
+};
+
+/* دسته‌بندی‌ها */
+const CATEGORIES = [
+  { id: "all",    label: "همه" },
+  { id: "manteau",label: "مانتو" },
+  { id: "dress",  label: "پیراهن" },
+  { id: "blouse", label: "شومیز" },
+  { id: "pants",  label: "شلوار" },
+  { id: "skirt",  label: "دامن" },
+  { id: "scarf",  label: "شال و روسری" }
+];
+
+/* کالکشن‌های صفحه اصلی */
+const COLLECTIONS = [
+  { title: "مانتوهای بلند", text: "خطوط کشیده برای روزهای پاییز", category: "manteau", shape: "coat", color: "#1F2A4A", image: "" },
+  { title: "پیراهن‌های روز", text: "سبک، روان و خوش‌فرم", category: "dress", shape: "dress", color: "#8A4B3A", image: "" },
+  { title: "شال و روسری", text: "نخ و ابریشم‌نما در رنگ‌های خاکی", category: "scarf", shape: "scarf", color: "#B79E7E", image: "" }
+];
+
+/* =========================================================
+   📦 محصولات
+   image: مسیر عکس واقعی (مثلاً "images/nasim.jpg"). خالی = تصویرسازی نمونه
+   price: عدد قیمت به تومان. null = «قیمت پس از استعلام» (قیمت ساختگی وارد نکنید)
+   ========================================================= */
+const PRODUCTS = [
+  { id: "p01", name: "مانتو بلند کتان «نسیم»", category: "manteau", shape: "coat", isNew: true,
+    desc: "برش راسته، کمربند هم‌رنگ، جیب پهلو.", price: null, image: "",
+    colors: [{n:"سرمه‌ای",h:"#1F2A4A"},{n:"شیری",h:"#EFE8DA"},{n:"خاکی",h:"#B79E7E"}], sizes: ["S","M","L","XL"] },
+  { id: "p02", name: "پیراهن کرپ «مهتاب»", category: "dress", shape: "dress", isNew: true,
+    desc: "یقه گرد، کمر چین‌دار، قد بلند.", price: null, image: "",
+    colors: [{n:"آجری",h:"#8A4B3A"},{n:"ذغالی",h:"#34312E"}], sizes: ["S","M","L"] },
+  { id: "p03", name: "شومیز ابریشم‌نما «رز»", category: "blouse", shape: "blouse", isNew: false,
+    desc: "دکمه‌دار با سرآستین ساده.", price: null, image: "",
+    colors: [{n:"شیری",h:"#EFE8DA"},{n:"طوسی",h:"#8C8A86"},{n:"بادمجانی",h:"#4A2B3A"}], sizes: ["M","L","XL"] },
+  { id: "p04", name: "شلوار راسته «سرو»", category: "pants", shape: "pants", isNew: false,
+    desc: "فاق بلند، دمپای راسته.", price: null, image: "",
+    colors: [{n:"ذغالی",h:"#34312E"},{n:"سرمه‌ای",h:"#1F2A4A"}], sizes: ["36","38","40","42"] },
+  { id: "p05", name: "دامن پلیسه «آبان»", category: "skirt", shape: "skirt", isNew: true,
+    desc: "پلیسه ریز، کمر کش‌دار.", price: null, image: "",
+    colors: [{n:"زیتونی",h:"#6B6A4B"},{n:"کرم",h:"#E2D5BD"}], sizes: ["فری‌سایز"] },
+  { id: "p06", name: "شال نخی «باران»", category: "scarf", shape: "scarf", isNew: false,
+    desc: "نخ پنبه، لبه ریش‌دار ظریف.", price: null, image: "",
+    colors: [{n:"خاکی",h:"#B79E7E"},{n:"طوسی",h:"#8C8A86"},{n:"سرمه‌ای",h:"#1F2A4A"}], sizes: ["فری‌سایز"] },
+  { id: "p07", name: "مانتو کتی «پاییز»", category: "manteau", shape: "coat", isNew: false,
+    desc: "یقه انگلیسی، پارچه فاستونی سبک.", price: null, image: "",
+    colors: [{n:"خاکی",h:"#A88B67"},{n:"ذغالی",h:"#34312E"}], sizes: ["M","L","XL"] },
+  { id: "p08", name: "پیراهن روزمره «یاس»", category: "dress", shape: "dress", isNew: false,
+    desc: "نخی، آستین سه‌ربع، گشاد.", price: null, image: "",
+    colors: [{n:"شیری",h:"#EFE8DA"},{n:"سرمه‌ای",h:"#1F2A4A"}], sizes: ["S","M","L","XL"] },
+  { id: "p09", name: "شلوار پاچه‌گشاد «ترمه»", category: "pants", shape: "pants", isNew: true,
+    desc: "کرپ روان، کمر پهن.", price: null, image: "",
+    colors: [{n:"کرم",h:"#E2D5BD"},{n:"بادمجانی",h:"#4A2B3A"}], sizes: ["36","38","40"] }
+];
+
+/* =========================================================
+   از اینجا به بعد کد اجرایی سایت است (نیازی به تغییر ندارد)
+   ========================================================= */
+(function(){
+  "use strict";
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const FA = "۰۱۲۳۴۵۶۷۸۹";
+  const toFa = v => String(v).replace(/\d/g, d => FA[d]);
+  const toEn = v => String(v).replace(/[۰-۹]/g, d => FA.indexOf(d)).replace(/[٠-٩]/g, d => "٠١٢٣٤٥٦٧٨٩".indexOf(d));
+  const norm = v => toEn(String(v).toLowerCase()).replace(/ي/g,"ی").replace(/ك/g,"ک").replace(/[\u200c\u064B-\u0652]/g,"").replace(/\s+/g," ").trim();
+  const esc = v => String(v).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const demo = !!CONFIG.demoMode;
+  const catLabel = id => (CATEGORIES.find(c => c.id === id) || {}).label || "";
+
+  /* ---------- اعمال رنگ‌ها و برند ---------- */
+  const root = document.documentElement.style;
+  const c = CONFIG.colors;
+  root.setProperty("--cream", c.cream); root.setProperty("--paper", c.paper);
+  root.setProperty("--sand", c.sand);   root.setProperty("--navy", c.navy);
+  root.setProperty("--navy-2", c.navy2);root.setProperty("--charcoal", c.charcoal);
+  root.setProperty("--brass", c.brass);
+  const meta = document.querySelector('meta[name="theme-color"]'); if (meta) meta.content = c.navy;
+
+  const B = CONFIG.brand;
+  $$("[data-brand]").forEach(el => el.textContent = B.name);
+  $$("[data-brand-latin]").forEach(el => el.textContent = B.latin);
+  $("#footerTagline").textContent = B.tagline;
+  $("#heroKicker").textContent = B.collectionLabel;
+  $("#storyText").textContent = B.story;
+  document.title = B.name + " | پوشاک زنانه ایرانی" + (demo ? " (نسخه نمونه)" : "");
+  $("#copyright").textContent = "© " + toFa(new Date().getFullYear()) + " " + B.name + "، همه حقوق محفوظ است.";
+  if (!demo) { $("#demoBar").remove(); $$(".sample-tag").forEach(e => e.remove()); const fc = $(".hero-figure figcaption"); if (fc) fc.remove(); }
+
+  /* ---------- تصویرسازی نمونه لباس (SVG) ---------- */
+  const SHAPES = {
+    coat:   { b:"M82 30 Q100 42 118 30 L148 42 Q160 90 170 150 L154 156 L142 104 L146 238 L54 238 L58 104 L46 156 L30 150 Q40 90 52 42 Z",
+              l:"M100 40 L100 238 M58 122 L142 122 M82 30 L96 72 M118 30 L104 72 M70 150 L84 150 M116 150 L130 150" },
+    dress:  { b:"M80 38 Q100 56 120 38 L130 44 L122 104 Q146 166 160 230 Q100 244 40 230 Q54 166 78 104 L70 44 Z",
+              l:"M78 104 Q100 112 122 104 M92 112 L80 228 M108 112 L120 228 M100 114 L100 236" },
+    blouse: { b:"M80 52 Q100 66 120 52 L154 64 L174 124 L156 132 L142 102 L144 204 L56 204 L58 102 L44 132 L26 124 L46 64 Z",
+              l:"M100 62 L100 204 M80 52 L100 74 L120 52 M96 96 h8 M96 126 h8 M96 156 h8 M96 186 h8" },
+    pants:  { b:"M64 34 L136 34 L148 236 L112 236 L100 102 L88 236 L52 236 Z",
+              l:"M64 48 L136 48 M100 48 L100 102 M80 62 L72 222 M120 62 L128 222" },
+    skirt:  { b:"M72 56 L128 56 L130 72 Q150 140 166 216 Q100 232 34 216 Q50 140 70 72 Z",
+              l:"M70 72 L130 72 M86 76 L66 214 M100 76 L100 222 M114 76 L134 214 M78 76 L50 210 M122 76 L150 210" },
+    scarf:  { b:"M36 70 Q100 104 164 70 L158 102 Q100 132 42 102 Z M110 116 L140 220 L118 228 L98 120 Z M90 116 L70 214 L50 206 L78 112 Z",
+              l:"M48 86 Q100 112 152 86 M118 228 l-2 8 M126 225 l-1 8 M134 222 l0 8 M50 206 l-3 8 M58 210 l-2 8 M66 213 l-1 8" }
+  };
+  const isLight = hex => { const h = hex.replace("#",""); const r=parseInt(h.substr(0,2),16),g=parseInt(h.substr(2,2),16),b=parseInt(h.substr(4,2),16); return (0.299*r+0.587*g+0.114*b) > 150; };
+  function garmentSVG(shape, fill, label){
+    const s = SHAPES[shape] || SHAPES.dress;
+    const line = isLight(fill) ? "#131C35" : "#F5F0E6";
+    return '<svg class="garment" viewBox="0 0 200 260" role="img" aria-label="' + esc(label) + '" focusable="false">' +
+      '<path class="g-fill" d="' + s.b + '" fill="' + fill + '" stroke="rgba(19,28,53,.28)" stroke-width="1"/>' +
+      '<path class="g-line" d="' + s.l + '" fill="none" stroke="' + line + '" stroke-opacity=".35" stroke-width="1.2" stroke-linecap="round"/></svg>';
+  }
+  function mediaHTML(image, shape, color, alt, eager){
+    if (image) {
+      return '<img src="' + esc(image) + '" alt="' + esc(alt) + '" width="800" height="1000" ' + (eager ? 'fetchpriority="high"' : 'loading="lazy"') + ' decoding="async" data-shape="' + shape + '" data-color="' + color + '">';
+    }
+    return garmentSVG(shape, color, alt + (demo ? " (تصویرسازی نمونه)" : ""));
+  }
+  // اگر عکس واقعی پیدا نشد، تصویرسازی جایگزین می‌شود
+  document.addEventListener("error", e => {
+    const img = e.target;
+    if (img.tagName === "IMG" && img.dataset.shape) { img.outerHTML = garmentSVG(img.dataset.shape, img.dataset.color, img.alt); }
+  }, true);
+
+  // هیرو
+  $("#heroMedia").innerHTML = CONFIG.heroImage
+    ? '<img src="' + esc(CONFIG.heroImage) + '" alt="تصویر شاخص کالکشن" width="900" height="1200" fetchpriority="high" data-shape="coat" data-color="#F5F0E6">'
+    : garmentSVG("coat", "#EFE8DA", "تصویرسازی نمونه مانتو بلند");
+
+  /* ---------- کالکشن‌ها ---------- */
+  $("#collectionGrid").innerHTML = COLLECTIONS.map((col, i) =>
+    '<button type="button" class="collection reveal" data-cat="' + col.category + '" style="transition-delay:' + (i*120) + 'ms">' +
+      '<div class="arch">' + mediaHTML(col.image, col.shape, col.color, col.title) + '</div>' +
+      '<h3>' + esc(col.title) + '</h3><p>' + esc(col.text) + '</p><span class="go">مشاهده محصولات</span></button>'
+  ).join("");
+  $("#collectionGrid").addEventListener("click", e => {
+    const b = e.target.closest(".collection"); if (!b) return;
+    setCategory(b.dataset.cat);
+    $("#products").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  });
+
+  /* ---------- فیلتر و جست‌وجو ---------- */
+  const state = { cat: "all", q: "" };
+  $("#chips").innerHTML = CATEGORIES.map(ct =>
+    '<button type="button" class="chip" data-cat="' + ct.id + '" aria-pressed="' + (ct.id === "all") + '">' + esc(ct.label) + '</button>').join("");
+  $("#chips").addEventListener("click", e => { const b = e.target.closest(".chip"); if (b) setCategory(b.dataset.cat); });
+  function setCategory(id){
+    state.cat = id;
+    $$(".chip").forEach(ch => ch.setAttribute("aria-pressed", String(ch.dataset.cat === id)));
+    renderProducts();
+  }
+  let qTimer;
+  $("#q").addEventListener("input", e => { clearTimeout(qTimer); qTimer = setTimeout(() => { state.q = norm(e.target.value); renderProducts(); }, 120); });
+
+  function priceHTML(p){
+    if (typeof p.price === "number" && p.price > 0) {
+      return '<p class="price">' + toFa(p.price.toLocaleString("en-US")).replace(/,/g,"٬") + " " + CONFIG.order.currency +
+        (demo ? ' <small>(قیمت نمونه)</small>' : '') + '</p>';
+    }
+    return '<p class="price">قیمت: پس از استعلام <small>(اعلام توسط فروشنده)</small></p>';
+  }
+  function cardHTML(p){
+    const c0 = p.colors[0];
+    const colors = p.colors.map((cl, i) =>
+      '<label class="swatch" title="' + esc(cl.n) + '"><input type="radio" name="c-' + p.id + '" value="' + i + '"' + (i===0?" checked":"") + '>' +
+      '<span style="background:' + cl.h + '"></span><span class="visually-hidden">' + esc(cl.n) + '</span></label>').join("");
+    const sizes = p.sizes.map((s, i) =>
+      '<label class="size"><input type="radio" name="s-' + p.id + '" value="' + esc(s) + '"' + (i===0?" checked":"") + '><span>' + esc(s) + '</span></label>').join("");
+    return '<article class="card reveal" data-id="' + p.id + '" aria-labelledby="t-' + p.id + '">' +
+      '<div class="card-media arch">' + mediaHTML(p.image, p.shape, c0.h, p.name) + (p.isNew ? '<span class="badge">جدید</span>' : '') + '</div>' +
+      '<div class="card-body">' +
+        '<p class="card-cat">' + esc(catLabel(p.category)) + '</p>' +
+        '<h3 id="t-' + p.id + '">' + esc(p.name) + '</h3>' +
+        '<p class="card-desc">' + esc(p.desc) + '</p>' +
+        priceHTML(p) +
+        '<fieldset class="opts"><legend>رنگ: <b class="color-name">' + esc(c0.n) + '</b>' + (demo ? ' (نمونه)' : '') + '</legend><div class="swatches">' + colors + '</div></fieldset>' +
+        '<fieldset class="opts"><legend>سایز' + (demo ? ' (نمونه)' : '') + '</legend><div class="sizes">' + sizes + '</div></fieldset>' +
+        '<div class="card-actions">' +
+          '<button type="button" class="btn btn-primary" data-action="wa">سفارش در واتساپ</button>' +
+          '<button type="button" class="btn btn-ghost" data-action="add">افزودن به سفارش</button>' +
+        '</div></div></article>';
+  }
+  function renderProducts(){
+    const list = PRODUCTS.filter(p => {
+      if (state.cat !== "all" && p.category !== state.cat) return false;
+      if (!state.q) return true;
+      const hay = norm([p.name, p.desc, catLabel(p.category), p.colors.map(x => x.n).join(" "), p.sizes.join(" ")].join(" "));
+      return state.q.split(" ").every(w => hay.includes(w));
+    });
+    const grid = $("#grid");
+    grid.innerHTML = list.length ? list.map(cardHTML).join("")
+      : '<p class="empty">محصولی با این مشخصات پیدا نشد. عبارت دیگری را جست‌وجو کنید یا فیلتر «همه» را بزنید.</p>';
+    $("#resultLine").textContent = toFa(list.length) + " محصول" + (state.cat !== "all" ? " در دسته «" + catLabel(state.cat) + "»" : "") + (state.q ? " برای «" + $("#q").value.trim() + "»" : "");
+    observe($$(".reveal", grid));
+  }
+
+  function selection(card){
+    const p = PRODUCTS.find(x => x.id === card.dataset.id);
+    const ci = +(card.querySelector('input[name="c-' + p.id + '"]:checked') || {value:0}).value;
+    const size = (card.querySelector('input[name="s-' + p.id + '"]:checked') || {value:p.sizes[0]}).value;
+    return { p, color: p.colors[ci], size };
+  }
+  $("#grid").addEventListener("change", e => {
+    const card = e.target.closest(".card"); if (!card || !e.target.name.startsWith("c-")) return;
+    const { p, color } = selection(card);
+    card.querySelector(".color-name").textContent = color.n;
+    if (!p.image) { const f = card.querySelector(".g-fill"); if (f) f.setAttribute("fill", color.h);
+      const l = card.querySelector(".g-line"); if (l) l.setAttribute("stroke", isLight(color.h) ? "#131C35" : "#F5F0E6"); }
+  });
+  $("#grid").addEventListener("click", e => {
+    const btn = e.target.closest("[data-action]"); if (!btn) return;
+    const { p, color, size } = selection(btn.closest(".card"));
+    if (btn.dataset.action === "wa") {
+      const msg = "سلام، از سایت " + B.name + " می‌خواهم این محصول را سفارش دهم:\n" +
+        "محصول: " + p.name + "\nکد: " + p.id.toUpperCase() + "\nرنگ: " + color.n + "\nسایز: " + size +
+        "\nلطفاً موجودی و قیمت نهایی را اعلام کنید.";
+      openWhatsApp(msg);
+    } else {
+      addToCart(p, color.n, size);
+    }
+  });
+
+  /* ---------- واتساپ ---------- */
+  function waNumber(){ return toEn(CONFIG.contact.whatsapp || "").replace(/\D/g, "").replace(/^00/, ""); }
+  function openWhatsApp(text){
+    const n = waNumber();
+    const url = "https://wa.me/" + (n || "") + "?text=" + encodeURIComponent(text);
+    if (!n) toast("شماره واتساپ هنوز در تنظیمات وارد نشده؛ پیام آماده شد و گیرنده را خودتان انتخاب کنید.");
+    window.open(url, "_blank", "noopener");
+  }
+  $("#waFloat").addEventListener("click", () => openWhatsApp("سلام، از سایت " + B.name + " پیام می‌دهم. درباره محصولات سؤال داشتم."));
+
+  /* ---------- سبد سفارش (ذخیره فقط در مرورگر کاربر) ---------- */
+  const KEY = "order-cart-v1";
+  let cart = [];
+  try { cart = JSON.parse(localStorage.getItem(KEY)) || []; } catch(_) { cart = []; }
+  cart = cart.filter(it => PRODUCTS.some(p => p.id === it.id));
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(cart)); } catch(_){} };
+
+  function addToCart(p, colorName, size){
+    const ex = cart.find(i => i.id === p.id && i.color === colorName && i.size === size);
+    if (ex) ex.qty = Math.min(ex.qty + 1, 20); else cart.push({ id: p.id, color: colorName, size, qty: 1 });
+    save(); renderCart();
+    toast("«" + p.name + "» به سبد سفارش اضافه شد.");
+  }
+  function renderCart(){
+    const count = cart.reduce((a, i) => a + i.qty, 0);
+    $("#cartCount").textContent = toFa(count);
+    const ul = $("#cartList");
+    if (!cart.length) { ul.innerHTML = '<li class="cart-empty">هنوز محصولی انتخاب نشده. در بخش محصولات، «افزودن به سفارش» را بزنید.</li>'; return; }
+    ul.innerHTML = cart.map((it, idx) => {
+      const p = PRODUCTS.find(x => x.id === it.id);
+      const col = p.colors.find(x => x.n === it.color) || p.colors[0];
+      return '<li class="cart-item"><div class="cart-thumb">' + mediaHTML(p.image, p.shape, col.h, p.name) + '</div>' +
+        '<div><b>' + esc(p.name) + '</b><small>رنگ: ' + esc(it.color) + ' · سایز: <span dir="ltr">' + esc(it.size) + '</span></small><br>' +
+        '<button type="button" class="remove" data-rm="' + idx + '">حذف</button></div>' +
+        '<div class="qty" role="group" aria-label="تعداد ' + esc(p.name) + '">' +
+          '<button type="button" data-inc="' + idx + '" aria-label="افزایش">+</button><output>' + toFa(it.qty) + '</output>' +
+          '<button type="button" data-dec="' + idx + '" aria-label="کاهش">−</button></div></li>';
+    }).join("");
+  }
+  $("#cartList").addEventListener("click", e => {
+    const t = e.target.closest("button"); if (!t) return;
+    if (t.dataset.inc) cart[+t.dataset.inc].qty = Math.min(cart[+t.dataset.inc].qty + 1, 20);
+    if (t.dataset.dec) { const i = +t.dataset.dec; cart[i].qty--; if (cart[i].qty < 1) cart.splice(i, 1); }
+    if (t.dataset.rm) cart.splice(+t.dataset.rm, 1);
+    save(); renderCart();
+  });
+
+  /* ---------- فرم ثبت سفارش ---------- */
+  const emailOK = !!CONFIG.contact.email;
+  const webOK = !!CONFIG.order.endpoint;
+  if (!emailOK) { $("#chEmail").disabled = true; $("#chEmailHint").textContent = "پس از وارد کردن ایمیل فروشگاه در تنظیمات فعال می‌شود."; }
+  if (!webOK)   { $("#chWeb").disabled = true;   $("#chWebHint").textContent = "پس از اتصال سرویس دریافت فرم در تنظیمات فعال می‌شود."; }
+  else          { $("#chWeb").checked = true; }
+
+  let lastText = "";
+  function makeCode(){
+    const d = new Date(); const pad = n => String(n).padStart(2, "0");
+    const rnd = Math.random().toString(36).slice(2, 6).toUpperCase();
+    return (B.latin.slice(0, 3) || "ORD").toUpperCase() + "-" + pad(d.getMonth()+1) + pad(d.getDate()) + "-" + rnd;
+  }
+  function setErr(id, msg){ const inp = $("#" + id); const er = $("#e" + id.slice(1)); inp.setAttribute("aria-invalid", msg ? "true" : "false"); if (er) er.textContent = msg; }
+
+  $("#orderForm").addEventListener("submit", async e => {
+    e.preventDefault();
+    const f = e.target; const status = $("#formStatus"); status.textContent = "";
+    const data = { name: f.elements["name"].value.trim(), phone: toEn(f.elements["phone"].value).replace(/[\s\-()]/g, ""), city: f.elements["city"].value.trim(),
+                   address: f.elements["address"].value.trim(), postal: toEn(f.elements["postal"].value.trim()), note: f.elements["note"].value.trim() };
+    let ok = true;
+    setErr("fName", data.name.length < 3 ? (ok = false, "نام و نام خانوادگی را وارد کنید.") : "");
+    setErr("fPhone", !/^(\+98|0098|98|0)?9\d{9}$/.test(data.phone) ? (ok = false, "شماره موبایل معتبر وارد کنید؛ مثل ۰۹۱۲۳۴۵۶۷۸۹") : "");
+    setErr("fCity", !data.city ? (ok = false, "شهر را وارد کنید.") : "");
+    setErr("fAddress", data.address.length < 8 ? (ok = false, "نشانی کامل را وارد کنید.") : "");
+    if (!cart.length) { ok = false; status.textContent = "سبد سفارش خالی است؛ ابتدا محصولی اضافه کنید."; }
+    else if (!$("#fConsent").checked) { ok = false; status.textContent = "لطفاً تأیید پایین فرم را علامت بزنید."; }
+    if (!ok) { const bad = f.querySelector('[aria-invalid="true"]'); if (bad) bad.focus(); return; }
+
+    const code = makeCode();
+    const items = cart.map(it => { const p = PRODUCTS.find(x => x.id === it.id); return { code: p.id.toUpperCase(), name: p.name, color: it.color, size: it.size, qty: it.qty }; });
+    lastText = "درخواست سفارش از سایت " + B.name + "\nکد مرجع: " + code + "\n\n" +
+      items.map((it, i) => toFa(i + 1) + ") " + it.name + " | رنگ: " + it.color + " | سایز: " + it.size + " | تعداد: " + toFa(it.qty)).join("\n") +
+      "\n\nنام: " + data.name + "\nموبایل: " + data.phone + "\nشهر: " + data.city + "\nنشانی: " + data.address +
+      (data.postal ? "\nکد پستی: " + data.postal : "") + (data.note ? "\nتوضیحات: " + data.note : "") +
+      "\n\nلطفاً موجودی، قیمت نهایی و هزینه ارسال را اعلام کنید.";
+
+    const ch = (f.querySelector('input[name="channel"]:checked') || {}).value || "whatsapp";
+    let msg = "";
+    if (ch === "whatsapp") {
+      openWhatsApp(lastText);
+      msg = "پنجره واتساپ با متن سفارش باز شد. برای ثبت درخواست، پیام را در واتساپ «ارسال» کنید. سفارش پس از تأیید فروشنده نهایی می‌شود.";
+    } else if (ch === "email") {
+      location.href = "mailto:" + CONFIG.contact.email + "?subject=" + encodeURIComponent("سفارش " + code) + "&body=" + encodeURIComponent(lastText);
+      msg = "برنامه ایمیل با متن سفارش باز شد. پس از ارسال ایمیل، فروشنده برای تأیید با شما تماس می‌گیرد.";
+    } else {
+      const btn = $("#submitBtn"); btn.disabled = true; btn.textContent = "در حال ارسال…";
+      try {
+        const res = await fetch(CONFIG.order.endpoint, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify({ orderCode: code, brand: B.name, items, customer: data, message: lastText, sentAt: new Date().toISOString() }) });
+        if (!res.ok) throw new Error(res.status);
+        msg = "درخواست سفارش برای فروشنده ارسال شد. فروشنده برای تأیید موجودی، قیمت و ارسال با شما تماس می‌گیرد.";
+        cart = []; save(); renderCart();
+      } catch (err) {
+        status.textContent = "ارسال انجام نشد. اتصال اینترنت را بررسی کنید یا مسیر واتساپ را انتخاب کنید.";
+        btn.disabled = false; btn.textContent = "ثبت و ارسال سفارش"; return;
+      }
+      btn.disabled = false; btn.textContent = "ثبت و ارسال سفارش";
+    }
+    $("#orderCode").textContent = code;
+    $("#resultMsg").textContent = msg;
+    f.hidden = true; const r = $("#result"); r.classList.add("show"); r.focus();
+  });
+  $("#copyOrder").addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText(lastText); toast("متن سفارش کپی شد."); }
+    catch(_) { toast("کپی انجام نشد؛ لطفاً دوباره تلاش کنید."); }
+  });
+  $("#clearCart").addEventListener("click", () => { cart = []; save(); renderCart(); toast("سبد سفارش خالی شد."); });
+  $("#newOrder").addEventListener("click", () => { $("#result").classList.remove("show"); const f = $("#orderForm"); f.hidden = false; f.elements["name"].focus(); });
+
+  /* ---------- فوتر: تماس و شبکه‌های اجتماعی ---------- */
+  const ct = CONFIG.contact, so = CONFIG.social;
+  const notSet = label => '<li class="muted">' + label + ': ' + (demo ? 'نمونه، هنوز ثبت نشده' : '') + '</li>';
+  const wa = waNumber();
+  $("#contactList").innerHTML =
+    (wa ? '<li><a href="https://wa.me/' + wa + '" target="_blank" rel="noopener">واتساپ: <span dir="ltr">+' + toFa(wa) + '</span></a></li>' : notSet("واتساپ")) +
+    (ct.phone ? '<li><a href="tel:' + esc(toEn(ct.phone).replace(/[^\d+]/g, "")) + '">تلفن: <span dir="ltr">' + esc(toFa(ct.phone)) + '</span></a></li>' : notSet("تلفن")) +
+    (ct.email ? '<li><a href="mailto:' + esc(ct.email) + '">' + esc(ct.email) + '</a></li>' : notSet("ایمیل")) +
+    (ct.address ? '<li>' + esc(ct.address) + '</li>' : notSet("نشانی")) +
+    (ct.hours ? '<li class="muted">' + esc(ct.hours) + '</li>' : '');
+  $("#socialList").innerHTML =
+    (so.instagram ? '<li><a href="https://instagram.com/' + esc(so.instagram) + '" target="_blank" rel="noopener">اینستاگرام</a></li>' : notSet("اینستاگرام")) +
+    (so.telegram ? '<li><a href="https://t.me/' + esc(so.telegram) + '" target="_blank" rel="noopener">تلگرام</a></li>' : notSet("تلگرام"));
+  [...$$("#contactList li.muted"), ...$$("#socialList li.muted")].forEach(li => { if (!demo && /:\s*$/.test(li.textContent)) li.remove(); });
+
+  /* ---------- داده ساختاریافته برای سئو ---------- */
+  const ld = { "@context": "https://schema.org", "@type": "ClothingStore", name: B.name, alternateName: B.latin,
+    description: document.querySelector('meta[name="description"]').content, url: location.href.split("#")[0] };
+  if (ct.phone) ld.telephone = ct.phone; if (ct.email) ld.email = ct.email; if (ct.address) ld.address = ct.address;
+  const same = []; if (so.instagram) same.push("https://instagram.com/" + so.instagram); if (so.telegram) same.push("https://t.me/" + so.telegram);
+  if (same.length) ld.sameAs = same;
+  const s = document.createElement("script"); s.type = "application/ld+json"; s.textContent = JSON.stringify(ld); document.head.appendChild(s);
+
+  /* ---------- منوی موبایل، هدر، انیمیشن‌ها، اعلان ---------- */
+  const menuBtn = $("#menuBtn"), mnav = $("#mobileNav");
+  menuBtn.addEventListener("click", () => { const open = menuBtn.getAttribute("aria-expanded") === "true";
+    menuBtn.setAttribute("aria-expanded", String(!open)); menuBtn.setAttribute("aria-label", open ? "باز کردن منو" : "بستن منو"); mnav.hidden = open; });
+  mnav.addEventListener("click", e => { if (e.target.closest("a")) { menuBtn.setAttribute("aria-expanded", "false"); menuBtn.setAttribute("aria-label", "باز کردن منو"); mnav.hidden = true; } });
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !mnav.hidden) { mnav.hidden = true; menuBtn.setAttribute("aria-expanded", "false"); menuBtn.focus(); } });
+  const header = $(".site-header");
+  addEventListener("scroll", () => header.classList.toggle("scrolled", scrollY > 8), { passive: true });
+
+  const io = "IntersectionObserver" in window ? new IntersectionObserver(en => en.forEach(x => { if (x.isIntersecting) { x.target.classList.add("in"); io.unobserve(x.target); } }), { rootMargin: "0px 0px -8% 0px", threshold: .08 }) : null;
+  function observe(els){ els.forEach(el => io ? io.observe(el) : el.classList.add("in")); }
+
+  let tTimer;
+  function toast(text){ const t = $("#toast"); t.textContent = text; t.classList.add("show"); clearTimeout(tTimer); tTimer = setTimeout(() => t.classList.remove("show"), 3600); }
+
+  renderProducts(); renderCart(); observe($$(".reveal"));
+})();
+</script>
+</body>
+</html>
 
