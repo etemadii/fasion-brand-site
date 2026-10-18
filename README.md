@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
 <!-- ═══════════ SEO ═══════════ -->
-<title>آوین | پوشاک زنانه — کالکشن جدید</title>
+<title>معز مد | پوشاک زنانه — کالکشن جدید</title>
 <meta name="description" content="آوین، برند نمونه پوشاک زنانه با طراحی مینیمال و برش‌های آرام. مشاهده کاتالوگ پیراهن، مانتو، شومیز و اکسسوری و ثبت سفارش از طریق واتساپ. (نسخه نمایشی)">
 <meta name="keywords" content="پوشاک زنانه، مانتو، پیراهن، شومیز، دامن، برند ایرانی، کالکشن جدید، آوین">
 <meta name="author" content="آوین">
