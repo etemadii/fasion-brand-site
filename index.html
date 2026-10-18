@@ -1,0 +1,1611 @@
+```html
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- ═══════════ SEO ═══════════ -->
+<title>آوین | پوشاک زنانه — کالکشن جدید</title>
+<meta name="description" content="آوین، برند نمونه پوشاک زنانه با طراحی مینیمال و برش‌های آرام. مشاهده کاتالوگ پیراهن، مانتو، شومیز و اکسسوری و ثبت سفارش از طریق واتساپ. (نسخه نمایشی)">
+<meta name="keywords" content="پوشاک زنانه، مانتو، پیراهن، شومیز، دامن، برند ایرانی، کالکشن جدید، آوین">
+<meta name="author" content="آوین">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#F7F2E9">
+<meta name="color-scheme" content="light">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:site_name" content="آوین">
+<meta property="og:title" content="آوین | پوشاک زنانه — کالکشن جدید">
+<meta property="og:description" content="مجموعه‌ای محدود از پوشاک زنانه با پارچه‌های طبیعی و برش‌های ساده. سفارش از طریق واتساپ. (نسخه نمایشی)">
+<meta property="og:image" content="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="آوین | پوشاک زنانه">
+<meta name="twitter:description" content="کالکشن جدید پوشاک زنانه — نسخه نمایشی">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%236E1D2B'/%3E%3Ctext x='50' y='70' font-size='56' text-anchor='middle' fill='%23F7F2E9' font-family='Georgia,serif'%3EA%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ClothingStore",
+  "name": "آوین",
+  "description": "برند نمونه پوشاک زنانه — نسخه نمایشی",
+  "inLanguage": "fa-IR",
+  "url": "https://example.com",
+  "telephone": "+98-21-0000-0000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "تهران",
+    "addressCountry": "IR",
+    "streetAddress": "خیابان نمونه، پلاک ۰۰ (اطلاعات نمونه)"
+  }
+}
+</script>
+
+<style>
+/* ═══════════════════════════════════════════════
+   ۰۱ — توکن‌های طراحی
+   ═══════════════════════════════════════════════ */
+:root{
+  --cream:#F7F2E9;
+  --cream-2:#FBF8F2;
+  --surface:#FFFDF8;
+  --ink:#26221F;
+  --ink-soft:#584F47;
+  --muted:#8C8177;
+  --wine:#6E1D2B;
+  --wine-deep:#4E121C;
+  --wine-tint:rgba(110,29,43,.08);
+  --line:rgba(38,34,31,.13);
+  --line-strong:rgba(38,34,31,.26);
+  --max:1180px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --shadow:0 22px 48px -32px rgba(38,34,31,.55);
+}
+
+/* ═══════════════════════════════════════════════
+   ۰۲ — پایه
+   ═══════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none !important}
+
+html{
+  -webkit-text-size-adjust:100%;
+  scroll-behavior:smooth;
+}
+body{
+  margin:0;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:"Vazirmatn","Segoe UI",Tahoma,"Iranian Sans",sans-serif;
+  font-size:15.5px;
+  font-weight:400;
+  line-height:1.9;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+input{font:inherit}
+ul,ol{margin:0;padding:0;list-style:none}
+h1,h2,h3,h4,p{margin:0}
+::selection{background:var(--wine);color:var(--cream)}
+
+:focus-visible{
+  outline:2px solid var(--wine);
+  outline-offset:3px;
+  border-radius:2px;
+}
+
+.skip-link{
+  position:fixed;top:-100px;inset-inline-start:1rem;z-index:200;
+  background:var(--wine);color:#fff;padding:.7rem 1.2rem;border-radius:2px;
+  font-size:.85rem;transition:top .25s var(--ease);
+}
+.skip-link:focus{top:1rem}
+
+.wrap{
+  width:min(var(--max), 100% - 2.2rem);
+  margin-inline:auto;
+}
+@media (min-width:768px){
+  .wrap{width:min(var(--max), 100% - 4rem)}
+}
+
+section[id]{scroll-margin-top:92px}
+.section{padding-block:clamp(3rem,8vw,5.5rem)}
+
+/* ═══════════════════════════════════════════════
+   ۰۳ — تیترها و اجزای مشترک
+   ═══════════════════════════════════════════════ */
+.eyebrow{
+  display:flex;align-items:center;gap:.65rem;
+  font-size:.72rem;letter-spacing:.06em;font-weight:500;
+  color:var(--wine);margin-bottom:.9rem;
+}
+.eyebrow::before{
+  content:"";width:30px;height:1px;background:var(--wine);opacity:.55;flex:none;
+}
+.eyebrow span{color:var(--muted);font-weight:400}
+
+h2{
+  font-size:clamp(1.45rem,3.6vw,2.25rem);
+  line-height:1.45;font-weight:700;letter-spacing:-.005em;
+}
+.section-sub{
+  margin-top:.9rem;max-width:58ch;
+  color:var(--ink-soft);font-size:.92rem;line-height:2;
+}
+.section-head{margin-bottom:clamp(1.8rem,4vw,2.8rem)}
+
+/* دکمه‌ها */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  padding:.85rem 1.7rem;font-size:.86rem;font-weight:500;line-height:1;
+  border:1px solid transparent;border-radius:2px;
+  transition:background .3s var(--ease),color .3s var(--ease),
+             border-color .3s var(--ease),transform .3s var(--ease);
+}
+.btn svg{width:16px;height:16px;flex:none}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--wine);color:var(--cream)}
+.btn-primary:hover{background:var(--wine-deep)}
+.btn-ghost{border-color:var(--line-strong);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--wine);color:var(--wine)}
+
+/* ═══════════════════════════════════════════════
+   ۰۴ — نوار نسخه نمایشی
+   ═══════════════════════════════════════════════ */
+.demo-banner{
+  background:var(--wine-tint);
+  border-bottom:1px solid rgba(110,29,43,.16);
+  color:var(--wine-deep);
+  font-size:.74rem;line-height:1.7;text-align:center;
+  padding:.55rem 1rem;
+}
+.demo-banner strong{font-weight:700}
+
+/* ═══════════════════════════════════════════════
+   ۰۵ — هدر
+   ═══════════════════════════════════════════════ */
+.site-header{
+  position:sticky;top:0;z-index:60;
+  background:rgba(247,242,233,.88);
+  -webkit-backdrop-filter:blur(14px) saturate(1.3);
+  backdrop-filter:blur(14px) saturate(1.3);
+  border-bottom:1px solid var(--line);
+  transition:box-shadow .35s var(--ease);
+}
+.site-header.is-scrolled{box-shadow:0 10px 30px -24px rgba(38,34,31,.7)}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;padding-block:.85rem;position:relative;
+}
+.logo{display:flex;flex-direction:column;line-height:1.15;gap:.15rem}
+.logo-fa{
+  font-size:1.3rem;font-weight:700;color:var(--wine);letter-spacing:.01em;
+}
+.logo-en{
+  font-size:.55rem;letter-spacing:.34em;color:var(--muted);
+  font-weight:500;text-transform:uppercase;
+}
+
+.nav{
+  position:absolute;top:100%;inset-inline:0;
+  background:var(--cream-2);
+  border-bottom:1px solid var(--line);
+  display:flex;flex-direction:column;
+  padding:.4rem 1.2rem 1rem;
+  opacity:0;visibility:hidden;transform:translateY(-8px);
+  transition:opacity .28s var(--ease),transform .28s var(--ease),visibility .28s;
+}
+.nav.open{opacity:1;visibility:visible;transform:none}
+.nav a{
+  padding:.72rem 0;font-size:.9rem;color:var(--ink-soft);
+  border-bottom:1px solid var(--line);
+  transition:color .25s var(--ease);
+}
+.nav a:last-child{border-bottom:0}
+.nav a:hover{color:var(--wine)}
+
+.header-actions{display:flex;align-items:center;gap:.55rem}
+.header-wa{
+  display:inline-flex;align-items:center;gap:.45rem;
+  border:1px solid var(--line-strong);border-radius:2px;
+  padding:.55rem .85rem;font-size:.78rem;color:var(--ink-soft);
+  transition:border-color .3s var(--ease),color .3s var(--ease),background .3s var(--ease);
+}
+.header-wa svg{width:15px;height:15px;fill:currentColor}
+.header-wa span{display:none}
+.header-wa:hover{border-color:var(--wine);color:var(--wine);background:var(--wine-tint)}
+
+.menu-toggle{
+  width:42px;height:38px;border:1px solid var(--line-strong);border-radius:2px;
+  display:grid;place-items:center;gap:5px;padding:0 10px;
+  transition:border-color .3s var(--ease);
+}
+.menu-toggle span{
+  display:block;width:100%;height:1.5px;background:var(--ink);
+  transition:transform .3s var(--ease),opacity .3s var(--ease);
+}
+.menu-toggle[aria-expanded="true"] span:first-child{transform:translateY(3.25px) rotate(45deg)}
+.menu-toggle[aria-expanded="true"] span:last-child{transform:translateY(-3.25px) rotate(-45deg)}
+
+@media (min-width:900px){
+  .menu-toggle{display:none}
+  .nav{
+    position:static;opacity:1;visibility:visible;transform:none;
+    flex-direction:row;gap:1.9rem;padding:0;background:none;border:0;
+    align-items:center;
+  }
+  .nav a{border-bottom:0;padding:.3rem 0;font-size:.85rem;position:relative}
+  .nav a::after{
+    content:"";position:absolute;inset-inline:0;bottom:-2px;height:1px;
+    background:var(--wine);transform:scaleX(0);transform-origin:var(--tw,right);
+    transition:transform .35s var(--ease);
+  }
+  .nav a:hover::after{transform:scaleX(1)}
+  .header-wa span{display:inline}
+}
+
+/* ═══════════════════════════════════════════════
+   ۰۶ — هیرو
+   ═══════════════════════════════════════════════ */
+.hero{
+  position:relative;
+  padding-block:clamp(2.2rem,6vw,4rem) clamp(2.5rem,7vw,5rem);
+  overflow:hidden;
+}
+.hero-grid{display:grid;gap:2.4rem}
+.hero h1{
+  font-size:clamp(2.1rem,7vw,3.7rem);
+  line-height:1.3;font-weight:700;letter-spacing:-.01em;
+  margin-top:.4rem;
+}
+.hero h1 em{
+  font-style:normal;color:var(--wine);
+  position:relative;display:inline-block;
+}
+.hero h1 em::after{
+  content:"";position:absolute;inset-inline:0;bottom:.05em;height:.32em;
+  background:var(--wine-tint);z-index:-1;border-radius:1px;
+}
+.hero .lede{
+  margin-top:1.35rem;max-width:46ch;
+  color:var(--ink-soft);font-size:.95rem;line-height:2.1;
+}
+.hero-actions{
+  display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.9rem;
+}
+.hero-meta{
+  display:flex;flex-wrap:wrap;gap:.4rem 1.6rem;
+  margin-top:2.2rem;padding-top:1.4rem;
+  border-top:1px solid var(--line);
+  font-size:.76rem;color:var(--muted);
+}
+.hero-meta li{display:flex;align-items:center;gap:.45rem}
+.hero-meta li::before{
+  content:"";width:5px;height:5px;border-radius:50%;
+  background:var(--wine);opacity:.7;flex:none;
+}
+
+.hero-media{position:relative}
+.hero-media img{
+  width:100%;aspect-ratio:4/5;object-fit:cover;
+  filter:saturate(.94);
+  background:#EFE7DA;
+}
+.hero-media::after{
+  content:"";position:absolute;inset:14px -14px -14px 14px;
+  border:1px solid rgba(110,29,43,.28);
+  pointer-events:none;z-index:-1;
+}
+.hero-caption{
+  display:block;margin-top:.9rem;
+  font-size:.72rem;color:var(--muted);letter-spacing:.02em;
+}
+
+@media (min-width:900px){
+  .hero-grid{
+    grid-template-columns:1.02fr .98fr;
+    align-items:center;
+    gap:clamp(2rem,5vw,4.5rem);
+  }
+  .hero-media img{aspect-ratio:5/6}
+}
+
+/* ═══════════════════════════════════════════════
+   ۰۷ — کالکشن (تایل‌ها)
+   ═══════════════════════════════════════════════ */
+.collection-grid{display:grid;gap:.9rem}
+@media (min-width:640px){
+  .collection-grid{grid-template-columns:repeat(3,1fr);gap:1.1rem}
+}
+.tile{
+  position:relative;display:block;overflow:hidden;background:#EFE7DA;
+}
+.tile img{
+  width:100%;aspect-ratio:4/5;object-fit:cover;
+  transition:transform .9s var(--ease),filter .9s var(--ease);
+  filter:saturate(.92);
+}
+.tile:hover img{transform:scale(1.05)}
+.tile-body{
+  position:absolute;inset-inline:0;bottom:0;
+  padding:2.8rem 1.1rem 1.1rem;
+  background:linear-gradient(to top, rgba(30,20,18,.72), rgba(30,20,18,0));
+  color:#fff;
+}
+.tile-body h3{font-size:1.02rem;font-weight:500;line-height:1.5}
+.tile-body p{font-size:.76rem;opacity:.85;margin-top:.15rem}
+.tile-link{
+  display:inline-flex;align-items:center;gap:.35rem;
+  margin-top:.75rem;font-size:.74rem;letter-spacing:.04em;
+  border-bottom:1px solid rgba(255,255,255,.45);padding-bottom:.15rem;
+}
+.tile-link svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.6}
+
+/* ═══════════════════════════════════════════════
+   ۰۸ — نوار ابزار (جست‌وجو و فیلتر)
+   ═══════════════════════════════════════════════ */
+.toolbar{
+  display:flex;flex-wrap:wrap;gap:.9rem;
+  align-items:center;justify-content:space-between;
+  margin-bottom:.9rem;
+}
+.search{position:relative;flex:1 1 100%;min-width:0}
+@media (min-width:900px){.search{flex:0 0 290px}}
+.search input{
+  width:100%;
+  padding:.72rem 2.5rem .72rem 1rem;
+  border:1px solid var(--line-strong);
+  border-radius:2px;
+  background:var(--surface);
+  color:var(--ink);
+  font-size:.85rem;
+  transition:border-color .3s var(--ease),box-shadow .3s var(--ease);
+  -webkit-appearance:none;appearance:none;
+}
+.search input::placeholder{color:var(--muted);font-size:.82rem}
+.search input:focus{
+  outline:none;border-color:var(--wine);
+  box-shadow:0 0 0 3px var(--wine-tint);
+}
+.search svg{
+  position:absolute;inset-inline-start:.85rem;top:50%;
+  transform:translateY(-50%);
+  width:16px;height:16px;stroke:var(--muted);fill:none;stroke-width:1.7;
+  pointer-events:none;
+}
+
+.chips{
+  display:flex;gap:.45rem;overflow-x:auto;
+  flex:1 1 auto;min-width:0;
+  padding-bottom:.3rem;
+  scrollbar-width:thin;
+  -webkit-overflow-scrolling:touch;
+}
+.chips::-webkit-scrollbar{height:3px}
+.chips::-webkit-scrollbar-thumb{background:var(--line-strong);border-radius:3px}
+.chip{
+  flex:none;
+  padding:.45rem 1rem;
+  border:1px solid var(--line-strong);
+  border-radius:999px;
+  font-size:.79rem;
+  color:var(--ink-soft);
+  white-space:nowrap;
+  transition:background .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease);
+}
+.chip:hover{border-color:var(--wine);color:var(--wine)}
+.chip[aria-pressed="true"]{
+  background:var(--wine);border-color:var(--wine);color:var(--cream);
+}
+
+.result-count{
+  font-size:.74rem;color:var(--muted);
+  margin-bottom:1.1rem;
+}
+
+/* ═══════════════════════════════════════════════
+   ۰۹ — کارت محصول
+   ═══════════════════════════════════════════════ */
+.products-grid{display:grid;gap:.9rem}
+@media (min-width:520px){.products-grid{grid-template-columns:repeat(2,1fr);gap:1.1rem}}
+@media (min-width:900px){.products-grid{grid-template-columns:repeat(3,1fr);gap:1.4rem}}
+
+.card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  display:flex;flex-direction:column;
+  transition:border-color .4s var(--ease),box-shadow .4s var(--ease),transform .4s var(--ease);
+}
+.card:hover{
+  border-color:var(--line-strong);
+  box-shadow:var(--shadow);
+  transform:translateY(-2px);
+}
+.card-media{position:relative;overflow:hidden;background:#EFE7DA}
+.card-media img{
+  width:100%;aspect-ratio:3/4;object-fit:cover;
+  filter:saturate(.95);
+  transition:transform .9s var(--ease),filter .9s var(--ease);
+}
+.card:hover .card-media img{transform:scale(1.045)}
+.card-tag{
+  position:absolute;top:.7rem;inset-inline-start:.7rem;
+  background:rgba(247,242,233,.94);
+  color:var(--wine);
+  font-size:.66rem;letter-spacing:.05em;
+  padding:.24rem .6rem;
+  border:1px solid rgba(110,29,43,.22);
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+}
+
+.card-body{
+  padding:.9rem .95rem 1.05rem;
+  display:flex;flex-direction:column;gap:.55rem;
+  flex:1;
+}
+.card-head{
+  display:flex;align-items:flex-start;justify-content:space-between;
+  gap:.6rem;
+}
+.card-title{
+  font-size:.92rem;font-weight:500;line-height:1.65;
+  color:var(--ink);
+}
+.card-price-wrap{
+  display:flex;flex-direction:column;align-items:flex-start;gap:.15rem;
+  flex:none;
+}
+.card-price{
+  font-size:.88rem;font-weight:700;color:var(--wine);
+  white-space:nowrap;line-height:1.4;
+}
+.card-price span{font-size:.68rem;font-weight:400;color:var(--ink-soft)}
+.flag{
+  font-size:.6rem;letter-spacing:.04em;
+  color:var(--muted);
+  border:1px solid var(--line-strong);
+  padding:.05rem .38rem;
+  border-radius:2px;
+  line-height:1.6;
+}
+.card-note{
+  font-size:.66rem;color:var(--muted);
+  margin-top:-.2rem;line-height:1.7;
+}
+
+.card-row{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.card-label{
+  font-size:.68rem;color:var(--muted);
+  min-width:2.1rem;flex:none;
+}
+
+.swatches{display:flex;align-items:center;gap:.32rem;flex-wrap:wrap}
+.swatch{
+  width:21px;height:21px;border-radius:50%;
+  border:1px solid rgba(38,34,31,.2);
+  padding:2.5px;background:transparent;
+  display:grid;place-items:center;
+  transition:border-color .3s var(--ease),box-shadow .3s var(--ease);
+}
+.swatch span{
+  display:block;width:100%;height:100%;border-radius:50%;
+  background:var(--sw);
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,.05);
+}
+.swatch:hover{border-color:var(--wine)}
+.swatch[aria-pressed="true"]{
+  border-color:var(--wine);
+  box-shadow:0 0 0 2px var(--wine-tint);
+}
+.swatch-name{font-size:.7rem;color:var(--ink-soft);margin-inline-start:.15rem}
+
+.sizes{display:flex;gap:.3rem;flex-wrap:wrap}
+.size{
+  min-width:31px;height:27px;padding:0 .45rem;
+  border:1px solid var(--line-strong);
+  border-radius:2px;
+  font-size:.72rem;color:var(--ink-soft);
+  display:inline-flex;align-items:center;justify-content:center;
+  transition:background .28s var(--ease),color .28s var(--ease),border-color .28s var(--ease);
+}
+.size:hover{border-color:var(--wine);color:var(--wine)}
+.size[aria-pressed="true"]{
+  background:var(--wine);border-color:var(--wine);color:var(--cream);
+}
+
+.btn-wa{
+  margin-top:auto;
+  display:flex;align-items:center;justify-content:center;gap:.45rem;
+  width:100%;padding:.68rem .9rem;
+  border:1px solid var(--wine);
+  border-radius:2px;
+  color:var(--wine);
+  font-size:.79rem;font-weight:500;
+  transition:background .3s var(--ease),color .3s var(--ease);
+}
+.btn-wa svg{width:15px;height:15px;fill:currentColor;flex:none}
+.btn-wa:hover{background:var(--wine);color:var(--cream)}
+
+.empty{
+  grid-column:1/-1;
+  text-align:center;
+  padding:3rem 1.2rem;
+  border:1px dashed var(--line-strong);
+  color:var(--ink-soft);
+  font-size:.88rem;
+  line-height:2.1;
+}
+.empty button{
+  margin-top:.9rem;color:var(--wine);
+  border-bottom:1px solid currentColor;
+  font-size:.82rem;
+}
+
+/* ═══════════════════════════════════════════════
+   ۱۰ — درباره برند
+   ═══════════════════════════════════════════════ */
+.about{background:var(--cream-2);border-block:1px solid var(--line)}
+.about-grid{display:grid;gap:2rem}
+@media (min-width:900px){
+  .about-grid{grid-template-columns:.95fr 1.05fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+}
+.about-media img{
+  width:100%;aspect-ratio:4/5;object-fit:cover;
+  filter:saturate(.92);
+  background:#EFE7DA;
+}
+.about-copy p{
+  color:var(--ink-soft);font-size:.92rem;line-height:2.15;
+  margin-top:1.05rem;
+}
+.values{
+  margin-top:2rem;border-top:1px solid var(--line);
+}
+.values li{
+  display:flex;align-items:baseline;justify-content:space-between;
+  gap:1rem;padding:.85rem 0;
+  border-bottom:1px solid var(--line);
+}
+.values strong{font-size:.87rem;font-weight:500;color:var(--ink)}
+.values span{font-size:.76rem;color:var(--muted);text-align:left}
+
+/* ═══════════════════════════════════════════════
+   ۱۱ — راهنمای سفارش
+   ═══════════════════════════════════════════════ */
+.steps{display:grid;gap:0;border-top:1px solid var(--line)}
+@media (min-width:700px){.steps{grid-template-columns:repeat(2,1fr);column-gap:2.5rem}}
+@media (min-width:1000px){.steps{grid-template-columns:repeat(4,1fr);column-gap:2rem}}
+.steps li{
+  padding:1.5rem 0 1.6rem;
+  border-bottom:1px solid var(--line);
+}
+.step-num{
+  display:block;
+  font-size:.78rem;font-weight:700;color:var(--wine);
+  letter-spacing:.08em;margin-bottom:.6rem;
+}
+.steps h3{font-size:.95rem;font-weight:500;margin-bottom:.45rem}
+.steps p{font-size:.83rem;color:var(--ink-soft);line-height:2}
+.guide-note{
+  margin-top:1.8rem;padding:1rem 1.15rem;
+  background:var(--wine-tint);
+  border-inline-start:2px solid var(--wine);
+  font-size:.8rem;color:var(--wine-deep);line-height:2;
+}
+
+/* ═══════════════════════════════════════════════
+   ۱۲ — فوتر
+   ═══════════════════════════════════════════════ */
+.site-footer{
+  background:var(--wine-deep);
+  color:rgba(247,242,233,.78);
+  padding-top:clamp(2.5rem,6vw,4rem);
+  margin-top:clamp(3rem,8vw,5.5rem);
+}
+.footer-grid{display:grid;gap:2.2rem;padding-bottom:2.6rem}
+@media (min-width:820px){
+  .footer-grid{grid-template-columns:1.5fr .8fr 1fr;gap:3rem}
+}
+.footer-brand .logo-fa{
+  color:var(--cream);font-size:1.5rem;display:block;line-height:1.2;
+}
+.footer-brand .logo-en{
+  display:block;color:rgba(247,242,233,.5);margin-top:.25rem;
+  font-size:.55rem;letter-spacing:.34em;
+}
+.footer-brand p{
+  margin-top:1rem;font-size:.83rem;line-height:2.05;
+  max-width:36ch;color:rgba(247,242,233,.7);
+}
+.footer-wa{
+  display:inline-flex;align-items:center;gap:.5rem;
+  margin-top:1.3rem;
+  border:1px solid rgba(247,242,233,.35);
+  border-radius:2px;
+  padding:.65rem 1.1rem;
+  font-size:.8rem;color:var(--cream);
+  transition:background .3s var(--ease),border-color .3s var(--ease),color .3s var(--ease);
+}
+.footer-wa svg{width:16px;height:16px;fill:currentColor}
+.footer-wa:hover{background:var(--cream);color:var(--wine-deep);border-color:var(--cream)}
+
+.footer-col h4{
+  font-size:.78rem;font-weight:500;color:var(--cream);
+  letter-spacing:.05em;margin-bottom:1rem;
+}
+.footer-col li{padding:.28rem 0;font-size:.83rem}
+.footer-col a,.footer-col span{color:rgba(247,242,233,.72);transition:color .25s var(--ease)}
+.footer-col a:hover{color:var(--cream)}
+.footer-col .demo-mark{
+  font-size:.62rem;color:rgba(247,242,233,.45);
+  border:1px solid rgba(247,242,233,.22);
+  border-radius:2px;padding:.02rem .34rem;margin-inline-start:.35rem;
+  white-space:nowrap;
+}
+.footer-bottom{
+  border-top:1px solid rgba(247,242,233,.16);
+  padding-block:1.25rem;
+  display:flex;flex-wrap:wrap;gap:.5rem 1rem;
+  align-items:center;justify-content:space-between;
+  font-size:.71rem;color:rgba(247,242,233,.55);
+}
+.footer-bottom a{color:rgba(247,242,233,.72)}
+.footer-bottom a:hover{color:var(--cream)}
+
+/* ═══════════════════════════════════════════════
+   ۱۳ — دکمه شناور واتساپ
+   ═══════════════════════════════════════════════ */
+.fab{
+  position:fixed;
+  inset-block-end:1rem;inset-inline-end:1rem;
+  z-index:55;
+  width:52px;height:52px;border-radius:50%;
+  background:var(--wine);color:var(--cream);
+  display:grid;place-items:center;
+  box-shadow:0 14px 30px -12px rgba(78,18,28,.75);
+  transition:transform .3s var(--ease),background .3s var(--ease);
+}
+.fab svg{width:24px;height:24px;fill:currentColor}
+.fab:hover{transform:translateY(-3px) scale(1.03);background:var(--wine-deep)}
+@media (min-width:900px){
+  .fab{width:56px;height:56px;inset-block-end:1.6rem;inset-inline-end:1.6rem}
+}
+
+/* ═══════════════════════════════════════════════
+   ۱۴ — انیمیشن ظهور
+   ═══════════════════════════════════════════════ */
+.js .reveal{
+  opacity:0;transform:translateY(18px);
+  transition:opacity .8s var(--ease),transform .8s var(--ease);
+  will-change:opacity,transform;
+}
+.js .reveal.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    transition-duration:.001ms !important;
+  }
+  .js .reveal{opacity:1 !important;transform:none !important}
+}
+</style>
+</head>
+
+<body>
+<a class="skip-link" href="#main">پرش به محتوای اصلی</a>
+
+<!-- ═══════════ نوار نسخه نمایشی ═══════════ -->
+<div class="demo-banner" role="note" data-demo>
+  <strong>نسخه نمایشی:</strong>
+  نام برند، تصاویر، قیمت‌ها، شماره واتساپ و اطلاعات تماس، همه <strong>نمونه</strong> هستند و باید جایگزین شوند.
+</div>
+
+<!-- ═══════════ هدر ═══════════ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#home" class="logo" aria-label="آوین — صفحه اصلی">
+      <span class="logo-fa" data-bind="brand.name">آوین</span>
+      <span class="logo-en" data-bind="brand.latin">AVIN STUDIO</span>
+    </a>
+
+    <nav class="nav" id="primaryNav" aria-label="ناوبری اصلی">
+      <a href="#collection">کالکشن</a>
+      <a href="#products">محصولات</a>
+      <a href="#about">درباره برند</a>
+      <a href="#order-guide">راهنمای سفارش</a>
+      <a href="#contact">تماس</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-wa" data-wa-general href="#" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2zm0 18.02c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.14.82.84-3.06-.2-.31a8.09 8.09 0 0 1-1.24-4.32c0-4.48 3.65-8.12 8.13-8.12 4.48 0 8.12 3.64 8.12 8.12 0 4.48-3.64 8.2-8.01 8.2zm4.47-6.08c-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.44-1.35-1.68-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.74-1.79-.2-.47-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.51.58.18 1.1.16 1.52.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+        <span>سفارش در واتساپ</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button"
+              aria-expanded="false" aria-controls="primaryNav" aria-label="باز و بسته کردن منو">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ═══════════ هیرو ═══════════ -->
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span>کالکشن پاییز ۱۴۰۴</span></p>
+        <h1>برشِ آرام،<br><em>رنگِ ماندگار</em></h1>
+        <p class="lede">
+          آوین مجموعه‌ای محدود از پوشاک زنانه است؛ با پارچه‌های طبیعی، برش‌های ساده و
+          دوخت تمیز. هر قطعه در تیراژ کم تولید می‌شود تا لباسی که می‌پوشید، ساده و ماندگار باشد.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#products">مشاهده محصولات</a>
+          <a class="btn btn-ghost" href="#order-guide">راهنمای سفارش</a>
+        </div>
+        <ul class="hero-meta">
+          <li>ارسال به سراسر ایران</li>
+          <li>تولید محدود</li>
+          <li>مشاوره سایز در واتساپ</li>
+        </ul>
+      </div>
+
+      <div class="hero-media reveal">
+        <!-- تصویر شاخص — برای جایگزینی، مقدار src را تغییر دهید -->
+        <img
+          src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&h=1125&q=80"
+          alt="تصویر شاخص کالکشن پوشاک زنانه آوین — تصویر نمونه"
+          width="900" height="1125" fetchpriority="high" decoding="async"
+          data-label="تصویر شاخص">
+        <span class="hero-caption">تصویر نمونه — جایگزین با عکس اصلی کالکشن</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ کالکشن جدید ═══════════ -->
+  <section class="section" id="collection">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span>۰۱</span> تازه‌ها</p>
+        <h2>کالکشن جدید</h2>
+        <p class="section-sub">
+          سه خط اصلی این فصل: لینن برای روزهای گرم، ابریشم برای درخشش ملایم و پشم مرینوس برای
+          سرمای سبک. برای دیدن جزئیات، وارد کاتالوگ شوید.
+        </p>
+      </div>
+
+      <div class="collection-grid">
+        <a class="tile reveal" href="#products">
+          <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=700&h=875&q=75"
+               alt="خط لینن — تصویر نمونه" loading="lazy" decoding="async" width="700" height="875" data-label="لینن">
+          <div class="tile-body">
+            <h3>لینن</h3>
+            <p>سبک و خنک، برای روزهای بلند</p>
+            <span class="tile-link">
+              مشاهده محصولات
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5l-7 7 7 7"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <a class="tile reveal" href="#products">
+          <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=700&h=875&q=75"
+               alt="خط ابریشم — تصویر نمونه" loading="lazy" decoding="async" width="700" height="875" data-label="ابریشم">
+          <div class="tile-body">
+            <h3>ابریشم</h3>
+            <p>درخشش ملایم در نور کم</p>
+            <span class="tile-link">
+              مشاهده محصولات
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5l-7 7 7 7"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <a class="tile reveal" href="#products">
+          <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=700&h=875&q=75"
+               alt="خط پشم مرینوس — تصویر نمونه" loading="lazy" decoding="async" width="700" height="875" data-label="پشم">
+          <div class="tile-body">
+            <h3>پشم مرینوس</h3>
+            <p>گرمای سبک، بدون سنگینی</p>
+            <span class="tile-link">
+              مشاهده محصولات
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5l-7 7 7 7"/></svg>
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ محصولات ═══════════ -->
+  <section class="section" id="products">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span>۰۲</span> کاتالوگ</p>
+        <h2>محصولات منتخب</h2>
+        <p class="section-sub">
+          رنگ و سایز مورد نظرتان را انتخاب کنید؛ دکمه سفارش، پیامی آماده شامل نام محصول،
+          کد، رنگ و سایز را در واتساپ باز می‌کند.
+        </p>
+      </div>
+
+      <div class="toolbar reveal">
+        <div class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="M20 20l-3.6-3.6"></path>
+          </svg>
+          <label class="sr-only" for="searchInput" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">جست‌وجو در محصولات</label>
+          <input id="searchInput" type="search" placeholder="جست‌وجو: نام محصول، رنگ، دسته…"
+                 autocomplete="off" enterkeyhint="search">
+        </div>
+
+        <div class="chips" id="filterChips" role="group" aria-label="فیلتر دسته‌بندی"></div>
+      </div>
+
+      <p class="result-count" id="resultCount" role="status" aria-live="polite"></p>
+
+      <div class="products-grid" id="productsGrid"></div>
+
+      <noscript>
+        <p style="margin-top:1.5rem;padding:1rem;border:1px dashed var(--line-strong);font-size:.85rem">
+          برای مشاهده محصولات و استفاده از فیلترها، لطفاً جاوااسکریپت را در مرورگر فعال کنید.
+        </p>
+      </noscript>
+    </div>
+  </section>
+
+  <!-- ═══════════ درباره برند ═══════════ -->
+  <section class="section about" id="about">
+    <div class="wrap about-grid">
+      <div class="about-media reveal">
+        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=800&h=1000&q=75"
+             alt="آتلیه و رگال لباس — تصویر نمونه" loading="lazy" decoding="async"
+             width="800" height="1000" data-label="درباره برند">
+      </div>
+
+      <div class="about-copy reveal">
+        <p class="eyebrow"><span>۰۳</span> درباره ما</p>
+        <h2>آوین؛ آرامش در جزئیات</h2>
+        <p>
+          آوین از یک ایده ساده شروع شد: لباسی که زیاد حرف نزند، اما درست باشد.
+          ما به جای دنبال کردن فصل‌های سریع مد، روی فرم‌های پایه و پارچه‌هایی تمرکز می‌کنیم
+          که با گذشت زمان بهتر می‌نشینند.
+        </p>
+        <p>
+          هر قطعه در تیراژ کم دوخته می‌شود؛ رنگ‌ها از پالت‌های خاکی و زرشکی انتخاب می‌شوند
+          و جزئیات — از دکمه تا دوختِ لبه — ساده و تمیز نگه داشته می‌شود.
+        </p>
+
+        <ul class="values">
+          <li><strong>پارچه طبیعی</strong><span>کتان، ابریشم، پشم مرینوس</span></li>
+          <li><strong>تولید محدود</strong><span>تیراژ کم در هر رنگ</span></li>
+          <li><strong>دوخت تمیز</strong><span>کنترل کیفیت تک‌به‌تک</span></li>
+          <li><strong>مشاوره سایز</strong><span>پیش از خرید، در واتساپ</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ راهنمای سفارش ═══════════ -->
+  <section class="section" id="order-guide">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span>۰۴</span> فرایند خرید</p>
+        <h2>راهنمای سفارش</h2>
+        <p class="section-sub">
+          سفارش‌گیری کاملاً از طریق واتساپ انجام می‌شود؛ بدون ثبت‌نام، بدون سبد خرید و بدون پرداخت آنلاین.
+        </p>
+      </div>
+
+      <ol class="steps">
+        <li class="reveal">
+          <span class="step-num">۰۱</span>
+          <h3>انتخاب قطعه</h3>
+          <p>از کاتالوگ، محصول مورد نظرتان را پیدا کنید و رنگ و سایز را انتخاب کنید.</p>
+        </li>
+        <li class="reveal">
+          <span class="step-num">۰۲</span>
+          <h3>ارسال پیام</h3>
+          <p>روی «سفارش از واتساپ» بزنید. پیامی آماده شامل نام محصول، کد، رنگ و سایز باز می‌شود.</p>
+        </li>
+        <li class="reveal">
+          <span class="step-num">۰۳</span>
+          <h3>تأیید موجودی</h3>
+          <p>همکاران ما موجودی، هزینه ارسال و زمان تقریبی تحویل را برایتان اعلام می‌کنند.</p>
+        </li>
+        <li class="reveal">
+          <span class="step-num">۰۴</span>
+          <h3>هماهنگی نهایی</h3>
+          <p>پس از تأیید شما، سفارش آماده و ارسال می‌شود. روش پرداخت در همان گفت‌وگو هماهنگ می‌گردد.</p>
+        </li>
+      </ol>
+
+      <p class="guide-note reveal">
+        <strong>توجه:</strong> این وب‌سایت هیچ پرداخت آنلاینی ندارد، هیچ سفارشی در پایگاه داده ثبت نمی‌شود
+        و هیچ پنل مدیریتی در آن وجود ندارد. قیمت‌های نمایش‌داده‌شده نمونه هستند و قیمت نهایی
+        در واتساپ تأیید می‌شود.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══════════ فوتر / تماس ═══════════ -->
+<footer class="site-footer" id="contact">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <span class="logo-fa" data-bind="brand.name">آوین</span>
+      <span class="logo-en" data-bind="brand.latin">AVIN STUDIO</span>
+      <p>
+        پوشاک زنانه با برش‌های ساده و پارچه‌های طبیعی.
+        برای مشاوره سایز، موجودی یا هماهنگی سفارش، در واتساپ پیام بدهید.
+      </p>
+      <a class="footer-wa" data-wa-general href="#" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2zm0 18.02c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.14.82.84-3.06-.2-.31a8.09 8.09 0 0 1-1.24-4.32c0-4.48 3.65-8.12 8.13-8.12 4.48 0 8.12 3.64 8.12 8.12 0 4.48-3.64 8.2-8.01 8.2zm4.47-6.08c-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.44-1.35-1.68-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.74-1.79-.2-.47-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.51.58.18 1.1.16 1.52.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+        گفت‌وگو در واتساپ
+      </a>
+    </div>
+
+    <div class="footer-col">
+      <h4>دسترسی سریع</h4>
+      <ul>
+        <li><a href="#collection">کالکشن جدید</a></li>
+        <li><a href="#products">محصولات</a></li>
+        <li><a href="#about">درباره برند</a></li>
+        <li><a href="#order-guide">راهنمای سفارش</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>تماس</h4>
+      <ul>
+        <li>
+          <a data-href="contact.phoneUrl" href="#">
+            <span data-bind="contact.phone">+98 21 0000 0000</span>
+          </a>
+          <span class="demo-mark" data-demo>نمونه</span>
+        </li>
+        <li>
+          <a data-href="contact.emailUrl" href="#">
+            <span data-bind="contact.email">hello@example.com</span>
+          </a>
+          <span class="demo-mark" data-demo>نمونه</span>
+        </li>
+        <li>
+          <a data-href="social.instagram" href="#" target="_blank" rel="noopener noreferrer nofollow">
+            اینستاگرام <span data-bind="social.instagramHandle">@avin.studio</span>
+          </a>
+          <span class="demo-mark" data-demo>نمونه</span>
+        </li>
+        <li>
+          <span data-bind="contact.address">تهران، خیابان نمونه، پلاک ۰۰</span>
+          <span class="demo-mark" data-demo>نمونه</span>
+        </li>
+        <li>
+          <span data-bind="whatsapp.display">۰۹۱۲ ۱۲۳ ۴۵۶۷</span>
+          <span class="demo-mark" data-demo>واتساپ نمونه</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>© ۱۴۰۴ <span data-bind="brand.name">آوین</span> — تمام حقوق محفوظ است.</p>
+    <p>این یک نسخه نمایشی است؛ اطلاعات، تصاویر و قیمت‌ها نمونه هستند.</p>
+  </div>
+</footer>
+
+<!-- دکمه شناور واتساپ -->
+<a class="fab" data-wa-general href="#" target="_blank" rel="noopener noreferrer"
+   aria-label="گفت‌وگو در واتساپ">
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2zm0 18.02c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.14.82.84-3.06-.2-.31a8.09 8.09 0 0 1-1.24-4.32c0-4.48 3.65-8.12 8.13-8.12 4.48 0 8.12 3.64 8.12 8.12 0 4.48-3.64 8.2-8.01 8.2zm4.47-6.08c-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.44-1.35-1.68-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.74-1.79-.2-.47-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.51.58.18 1.1.16 1.52.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+</a>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ═══════════════════════════════════════════════════════════
+     ۱) بخش تنظیمات — همه چیز را از همین‌جا تغییر دهید
+     ═══════════════════════════════════════════════════════════ */
+  const CONFIG = {
+
+    /* اگر false شود، همه هشدارهای «نمونه» پنهان می‌شوند.
+       تنها زمانی false کنید که اطلاعات واقعی را وارد کرده‌اید. */
+    demoMode: true,
+
+    brand: {
+      name:  'آوین',            // ← نام برند (نمونه)
+      latin: 'AVIN STUDIO',     // ← نام لاتین (نمونه)
+      tagline: 'پوشاک زنانه با برشِ آرام'
+    },
+
+    /* شماره واتساپ: فقط رقم، با کد کشور و بدون ۰ و بدون + 
+       مثال ایران: 989121234567 */
+    whatsapp: {
+      number:  '989121234567',  // ← نمونه — حتماً جایگزین کنید
+      display: '۰۹۱۲ ۱۲۳ ۴۵۶۷', // ← نمونه
+      greeting: 'سلام، از سایت آوین پیام می‌دهم.'
+    },
+
+    /* رنگ‌های برند — روی متغیرهای CSS اعمال می‌شوند */
+    colors: {
+      cream:    '#F7F2E9',
+      ink:      '#26221F',
+      wine:     '#6E1D2B',
+      wineDeep: '#4E121C'
+    },
+
+    social: {
+      instagram: 'https://instagram.com/avin.studio',  // ← نمونه
+      instagramHandle: '@avin.studio'
+    },
+
+    contact: {
+      phone:    '+98 21 0000 0000',            // ← نمونه
+      phoneUrl: 'tel:+98210000000',
+      email:    'hello@example.com',           // ← نمونه
+      emailUrl: 'mailto:hello@example.com',
+      address:  'تهران، خیابان نمونه، پلاک ۰۰' // ← نمونه
+    },
+
+    currency: 'تومان'
+  };
+
+  /* ═══════════════════════════════════════════════════════════
+     ۲) دسته‌بندی‌ها
+     ═══════════════════════════════════════════════════════════ */
+  const CATEGORIES = [
+    { id: 'all',       label: 'همه' },
+    { id: 'dress',     label: 'پیراهن' },
+    { id: 'manto',     label: 'مانتو' },
+    { id: 'shirt',     label: 'شومیز' },
+    { id: 'skirt',     label: 'دامن' },
+    { id: 'pants',     label: 'شلوار' },
+    { id: 'accessory', label: 'اکسسوری' }
+  ];
+
+  /* ═══════════════════════════════════════════════════════════
+     ۳) محصولات — نمونه
+     برای افزودن محصول: یک آبجکت مشابه اضافه کنید.
+     برای عکس واقعی: مقدار image را با آدرس عکس خودتان عوض کنید.
+     ═══════════════════════════════════════════════════════════ */
+  const PRODUCTS = [
+    {
+      id: 'p1', code: 'AV-101', name: 'پیراهن ابریشمی «نیلا»',
+      cat: 'dress', catLabel: 'پیراهن', price: 2850000, tag: 'جدید',
+      colors: [{ name: 'زرشکی', hex: '#6E1D2B' }, { name: 'کرم', hex: '#E4D6C0' }],
+      sizes: ['S', 'M', 'L'],
+      image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=700&h=930&q=75'
+    },
+    {
+      id: 'p2', code: 'AV-102', name: 'مانتو لینن «سایه»',
+      cat: 'manto', catLabel: 'مانتو', price: 3450000, tag: '',
+      colors: [{ name: 'ذغالی', hex: '#2E2A27' }, { name: 'شنی', hex: '#C9B79C' }],
+      sizes: ['S', 'M', 'L', 'XL'],
+      image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&h=930&q=75'
+    },
+    {
+      id: 'p3', code: 'AV-103', name: 'شومیز ابریشم «ماهور»',
+      cat: 'shirt', catLabel: 'شومیز', price: 1980000, tag: '',
+      colors: [{ name: 'شیری', hex: '#F1E9DC' }, { name: 'زرشکی', hex: '#6E1D2B' }],
+      sizes: ['S', 'M', 'L'],
+      image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=700&h=930&q=75'
+    },
+    {
+      id: 'p4', code: 'AV-104', name: 'دامن پلیسه «آرام»',
+      cat: 'skirt', catLabel: 'دامن', price: 2150000, tag: 'کالکشن پاییز',
+      colors: [{ name: 'زرشکی', hex: '#6E1D2B' }, { name: 'مشکی', hex: '#1F1B19' }],
+      sizes: ['S', 'M', 'L'],
+      image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=700&h=930&q=75'
+    },
+    {
+      id: 'p5', code: 'AV-105', name: 'شلوار پارچه‌ای «نیوشا»',
+      cat: 'pants', catLabel: 'شلوار', price: 1750000, tag: '',
+      colors: [{ name: 'ذغالی', hex: '#2E2A27' }, { name: 'کرم', hex: '#E4D6C0' }],
+      sizes: ['36', '38', '40', '42'],
+      image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&h=930&q=75'
+    },
+    {
+      id: 'p6', code: 'AV-106', name: 'شال پشمی «باد»',
+      cat: 'accessory', catLabel: 'اکسسوری', price: 890000, tag: '',
+      colors: [{ name: 'کرم', hex: '#E4D6C0' }, { name: 'زرشکی', hex: '#6E1D2B' }],
+      sizes: ['یک سایز'],
+      image: 'https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=700&h=930&q=75'
+    },
+    {
+      id: 'p7', code: 'AV-107', name: 'پیراهن کتان «نارین»',
+      cat: 'dress', catLabel: 'پیراهن', price: 2400000, tag: '',
+      colors: [{ name: 'شنی', hex: '#C9B79C' }, { name: 'سفید', hex: '#F4EFE6' }],
+      sizes: ['S', 'M', 'L'],
+      image: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=700&h=930&q=75'
+    },
+    {
+      id: 'p8', code: 'AV-108', name: 'مانتو کتان «هستی»',
+      cat: 'manto', catLabel: 'مانتو', price: 3100000, tag: 'جدید',
+      colors: [{ name: 'کرم', hex: '#E4D6C0' }, { name: 'زیتونی', hex: '#6B6B4B' }],
+      sizes: ['S', 'M', 'L'],
+      image: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=700&h=930&q=75'
+    },
+    {
+      id: 'p9', code: 'AV-109', name: 'کیف چرم «مینو»',
+      cat: 'accessory', catLabel: 'اکسسوری', price: 2600000, tag: '',
+      colors: [{ name: 'زرشکی', hex: '#6E1D2B' }, { name: 'ذغالی', hex: '#2E2A27' }],
+      sizes: ['یک سایز'],
+      image: 'https://images.unsplash.com/photo-1554568218-0f1715e72254?auto=format&fit=crop&w=700&h=930&q=75'
+    }
+  ];
+
+  /* ═══════════════════════════════════════════════════════════
+     ۴) ابزارهای کمکی
+     ═══════════════════════════════════════════════════════════ */
+  const $  = function (sel, root) { return (root || document).querySelector(sel); };
+  const $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };
+
+  const FA_DIGITS = '۰۱۲۳۴۵۶۷۸۹';
+
+  function fa(value) {
+    return String(value).replace(/[0-9]/g, function (d) { return FA_DIGITS[+d]; });
+  }
+
+  function formatPrice(num) {
+    const raw = Math.round(num).toLocaleString('en-US'); // 2,850,000
+    return fa(raw.replace(/,/g, '٬'));                   // ۲٬۸۵۰٬۰۰۰
+  }
+
+  /* یکسان‌سازی حروف عربی/فارسی برای جست‌وجوی بهتر */
+  function normalize(str) {
+    return String(str)
+      .toLowerCase()
+      .replace(/ي/g, 'ی')
+      .replace(/ك/g, 'ک')
+      .replace(/ۀ/g, 'ه')
+      .replace(/[\u064B-\u0652\u0640]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function esc(str) {
+    return String(str).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  function getPath(obj, path) {
+    return path.split('.').reduce(function (acc, key) {
+      return (acc == null ? undefined : acc[key]);
+    }, obj);
+  }
+
+  /* تصویر جانشین در صورت خطای بارگذاری عکس */
+  function placeholderSVG(label) {
+    const safe = String(label || 'آوین');
+    const svg =
+      '<svg xmlns="http://www.w3.org/2000/svg" width="700" height="930" viewBox="0 0 700 930">' +
+        '<rect width="700" height="930" fill="#EFE7DA"/>' +
+        '<rect x="28" y="28" width="644" height="874" fill="none" stroke="#C9BBA6" stroke-width="1"/>' +
+        '<text x="350" y="480" text-anchor="middle" font-family="Tahoma, sans-serif" font-size="32" fill="#6E1D2B">' + safe + '</text>' +
+      '</svg>';
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg).replace(/'/g, '%27');
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     ۵) وضعیت برنامه
+     ═══════════════════════════════════════════════════════════ */
+  const state = {
+    q: '',
+    cat: 'all',
+    sel: {} // { productId: { size, color } }
+  };
+
+  PRODUCTS.forEach(function (p) {
+    state.sel[p.id] = {
+      size: p.sizes.length === 1 ? p.sizes[0] : null,
+      color: 0
+    };
+  });
+
+  /* ═══════════════════════════════════════════════════════════
+     ۶) ساخت لینک واتساپ
+     ═══════════════════════════════════════════════════════════ */
+  function orderLink(product, sel) {
+    const color = product.colors[sel.color] ? product.colors[sel.color].name : '—';
+    const size  = sel.size || 'انتخاب نشده — لطفاً راهنمایی کنید';
+    const priceNote = formatPrice(product.price) + ' ' + CONFIG.currency +
+                      (CONFIG.demoMode ? ' (نمونه)' : '');
+
+    const lines = [
+      CONFIG.whatsapp.greeting,
+      '',
+      'محصول: ' + product.name,
+      'کد: ' + product.code,
+      'رنگ: ' + color,
+      'سایز: ' + size,
+      'قیمت نمایش‌داده‌شده در سایت: ' + priceNote,
+      '',
+      'لطفاً موجودی، هزینه ارسال و زمان تحویل را اعلام کنید.'
+    ];
+
+    return 'https://wa.me/' + CONFIG.whatsapp.number +
+           '?text=' + encodeURIComponent(lines.join('\n'));
+  }
+
+  function generalWhatsappLink() {
+    const msg = CONFIG.whatsapp.greeting + '\n' +
+                'درباره محصولات سایت سؤال دارم. لطفاً راهنمایی کنید.';
+    return 'https://wa.me/' + CONFIG.whatsapp.number +
+           '?text=' + encodeURIComponent(msg);
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     ۷) قالب کارت محصول
+     ═══════════════════════════════════════════════════════════ */
+  const WA_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2zm0 18.02c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.14.82.84-3.06-.2-.31a8.09 8.09 0 0 1-1.24-4.32c0-4.48 3.65-8.12 8.13-8.12 4.48 0 8.12 3.64 8.12 8.12 0 4.48-3.64 8.2-8.01 8.2zm4.47-6.08c-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.44-1.35-1.68-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.74-1.79-.2-.47-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.51.58.18 1.1.16 1.52.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>';
+
+  function cardHTML(product) {
+    const sel = state.sel[product.id];
+
+    const swatches = product.colors.map(function (c, i) {
+      const on = (i === sel.color);
+      return '<button type="button" class="swatch" data-color="' + i + '"' +
+             ' aria-pressed="' + on + '"' +
+             ' aria-label="رنگ ' + esc(c.name) + '"' +
+             ' title="' + esc(c.name) + '"' +
+             ' style="--sw:' + esc(c.hex) + '"><span></span></button>';
+    }).join('');
+
+    const sizes = product.sizes.map(function (s) {
+      const on = (s === sel.size);
+      return '<button type="button" class="size" data-size="' + esc(s) + '"' +
+             ' aria-pressed="' + on + '">' + esc(s) + '</button>';
+    }).join('');
+
+    const priceNote = CONFIG.demoMode
+      ? '<p class="card-note">قیمت نمونه — قیمت نهایی در واتساپ تأیید می‌شود.</p>'
+      : '';
+
+    const flag = CONFIG.demoMode
+      ? '<span class="flag">نمونه</span>'
+      : '';
+
+    const tag = product.tag
+      ? '<span class="card-tag">' + esc(product.tag) + '</span>'
+      : '';
+
+    return '' +
+      '<article class="card reveal" data-id="' + esc(product.id) + '">' +
+        '<div class="card-media">' +
+          '<img src="' + esc(product.image) + '"' +
+          ' alt="' + esc(product.name) + ' — ' + esc(product.catLabel) + ' (تصویر نمونه)"' +
+          ' loading="lazy" decoding="async" width="700" height="930"' +
+          ' data-label="' + esc(product.name) + '">' +
+          tag +
+        '</div>' +
+        '<div class="card-body">' +
+          '<div class="card-head">' +
+            '<h3 class="card-title">' + esc(product.name) + '</h3>' +
+            '<div class="card-price-wrap">' +
+              '<p class="card-price">' + formatPrice(product.price) +
+                ' <span>' + esc(CONFIG.currency) + '</span></p>' +
+              flag +
+            '</div>' +
+          '</div>' +
+          priceNote +
+          '<div class="card-row">' +
+            '<span class="card-label">رنگ</span>' +
+            '<div class="swatches">' + swatches +
+              '<span class="swatch-name">' + esc(product.colors[sel.color].name) + '</span>' +
+            '</div>' +
+          '</div>' +
+          '<div class="card-row">' +
+            '<span class="card-label">سایز</span>' +
+            '<div class="sizes">' + sizes + '</div>' +
+          '</div>' +
+          '<a class="btn-wa" href="' + orderLink(product, sel) + '"' +
+            ' target="_blank" rel="noopener noreferrer">' +
+            WA_ICON + '<span>سفارش از واتساپ</span>' +
+          '</a>' +
+        '</div>' +
+      '</article>';
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     ۸) رندر لیست محصولات
+     ═══════════════════════════════════════════════════════════ */
+  const grid       = $('#productsGrid');
+  const resultCount = $('#resultCount');
+
+  function renderProducts() {
+    const q = normalize(state.q);
+
+    const list = PRODUCTS.filter(function (p) {
+      if (state.cat !== 'all' && p.cat !== state.cat) return false;
+      if (!q) return true;
+
+      const haystack = normalize(
+        [p.name, p.catLabel, p.code]
+          .concat(p.colors.map(function (c) { return c.name; }))
+          .concat(p.sizes)
+          .join(' ')
+      );
+      return haystack.indexOf(q) !== -1;
+    });
+
+    if (list.length === 0) {
+      grid.innerHTML =
+        '<div class="empty">' +
+          'محصولی با این فیلتر پیدا نشد.<br>' +
+          'می‌توانید عبارت جست‌وجو را پاک کنید یا دسته‌بندی دیگری را امتحان کنید.' +
+          '<br><button type="button" id="resetFilters">پاک کردن فیلترها</button>' +
+        '</div>';
+    } else {
+      grid.innerHTML = list.map(cardHTML).join('');
+    }
+
+    wireImages(grid);
+    observeReveals(grid);
+
+    resultCount.textContent = list.length
+      ? fa(list.length) + ' محصول نمایش داده شد'
+      : 'محصولی یافت نشد';
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     ۹) تصاویر: جایگزین خودکار در صورت خطا
+     ═══════════════════════════════════════════════════════════ */
+  function wireImages(scope) {
+    $$('img', scope).forEach(function (img) {
+      if (img.dataset.wired === '1') return;
+      img.dataset.wired = '1';
+
+      img.addEventListener('error', function () {
+        this.src = placeholderSVG(this.dataset.label || 'آوین');
+      }, { once: true });
+
+      /* اگر تصویر پیش از اتصال لیسنر خطا داده باشد */
+      if (img.complete && img.naturalWidth === 0) {
+        img.src = placeholderSVG(img.dataset.label || 'آوین');
+      }
+    });
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     ۱۰) به‌روزرسانی درجای کارت (بدون رندر مجدد)
+     ═══════════════════════════════════════════════════════════ */
+  function syncCard(card, product) {
+    const sel = state.sel[product.id];
+
+    $$('[data-size]', card).forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.size === sel.size));
+    });
+
+    $$('[data-color]', card).forEach(function (b) {
+      b.setAttribute('aria-pressed', String(Number(b.dataset.color) === sel.color));
+    });
+
+    const nameEl = $('.swatch-name', card);
+    if (nameEl) nameEl.textContent = product.colors[sel.color].name;
+
+    const link = $('.btn-wa', card);
+    if (link) link.href = orderLink(product, sel);
+  }
+
+  grid.addEventListener('click', function (event) {
+    /* دکمه پاک کردن فیلترها */
+    if (event.target.closest('#resetFilters')) {
+      state.q = '';
+      state.cat = 'all';
+      $('#searchInput').value = '';
+      syncChips();
+      renderProducts();
+      return;
+    }
+
+    const card = event.target.closest('.card');
+    if (!card) return;
+
+    const product = PRODUCTS.filter(function (p) { return p.id === card.dataset.id; })[0];
+    if (!product) return;
+
+    const sizeBtn  = event.target.closest('[data-size]');
+    const colorBtn = event.target.closest('[data-color]');
+
+    if (sizeBtn) {
+      state.sel[product.id].size = sizeBtn.dataset.size;
+      syncCard(card, product);
+      return;
+    }
+
+    if (colorBtn) {
+      state.sel[product.id].color = Number(colorBtn.dataset.color);
+      syncCard(card, product);
+    }
+  });
+
+  /* ═══════════════════════════════════════════════════════════
+     ۱۱) فیلتر دسته‌بندی
+     ═══════════════════════════════════════════════════════════ */
+  const chipsEl = $('#filterChips');
+
+  function renderChips() {
+    chipsEl.innerHTML = CATEGORIES.map(function (c) {
+      return '<button type="button" class="chip" data-cat="' + c.id + '"' +
+             ' aria-pressed="' + (state.cat === c.id) + '">' + c.label + '</button>';
+    }).join('');
+  }
+
+  function syncChips() {
+    $$('.chip', chipsEl).forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.cat === state.cat));
+    });
+  }
+
+  chipsEl.addEventListener('click', function (event) {
+    const btn = event.target.closest('.chip');
+    if (!btn) return;
+    state.cat = btn.dataset.cat;
+    syncChips();
+    renderProducts();
+  });
+
+  /* ═══════════════════════════════════════════════════════════
+     ۱۲) جست‌وجو
+     ═══════════════════════════════════════════════════════════ */
+  let searchTimer = null;
+  const searchInput = $('#searchInput');
+
+  searchInput.addEventListener('input', function () {
+    const value = this.value;
+    window.clearTimeout(searchTimer);
+    searchTimer = window.setTimeout(function () {
+      state.q = value;
+      renderProducts();
+    }, 140);
+  });
+
+  /* ═══════════════════════════════════════════════════════════
+     ۱۳) منوی موبایل
+     ═══════════════════════════════════════════════════════════ */
+  const menuToggle = $('#menuToggle');
+  const primaryNav = $('#primaryNav');
+
+  function closeMenu() {
+    primaryNav.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  menuToggle.addEventListener('click', function () {
+    const open = primaryNav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(open));
+  });
+
+  primaryNav.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') closeMenu();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeMenu();
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.header-inner')) closeMenu();
+  });
+
+  /* ═══════════════════════════════════════════════════════════
+     ۱۴) سایه هدر هنگام اسکرول
+     ═══════════════════════════════════════════════════════════ */
+  const header = $('#siteHeader');
+  let lastScrollState = false;
+
+  window.addEventListener('scroll', function () {
+    const scrolled = window.scrollY > 12;
+    if (scrolled !== lastScrollState) {
+      lastScrollState = scrolled;
+      header.classList.toggle('is-scrolled', scrolled);
+    }
+  }, { passive: true });
+
+  /* ═══════════════════════════════════════════════════════════
+     ۱۵) انیمیشن ظهور
+     ═══════════════════════════════════════════════════════════ */
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const revealObserver = ('IntersectionObserver' in window && !reduceMotion)
+    ? new IntersectionObserver(function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
+    : null;
+
+  function observeReveals(scope) {
+    const els = $$('.reveal', scope || document);
+    els.forEach(function (el) {
+      if (el.classList.contains('in')) return;
+      if (revealObserver) {
+        revealObserver.observe(el);
+      } else {
+        el.classList.add('in');
+      }
+    });
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     ۱۶) اعمال تنظیمات برند روی صفحه
+     ═══════════════════════════════════════════════════════════ */
+  function applyConfig() {
+    /* رنگ‌ها */
+    const root = document.documentElement;
+    root.style.setProperty('--cream', CONFIG.colors.cream);
+    root.style.setProperty('--cream-2', CONFIG.colors.cream);
+    root.style.setProperty('--ink', CONFIG.colors.ink);
+    root.style.setProperty('--wine', CONFIG.colors.wine);
+    root.style.setProperty('--wine-deep', CONFIG.colors.wineDeep);
+
+    /* متن‌ها */
+    $$('[data-bind]').forEach(function (el) {
+      const value = getPath(CONFIG, el.dataset.bind);
+      if (value != null && value !== '') el.textContent = value;
+    });
+
+    /* لینک‌ها */
+    $$('[data-href]').forEach(function (el) {
+      const value = getPath(CONFIG, el.dataset.href);
+      if (value) el.setAttribute('href', value);
+    });
+
+    /* لینک‌های عمومی واتساپ */
+    $$('[data-wa-general]').forEach(function (el) {
+      el.setAttribute('href', generalWhatsappLink());
+    });
+
+    /* نمایش/پنهان‌سازی نشانه‌های «نمونه» */
+    $$('[data-demo]').forEach(function (el) {
+      el.hidden = !CONFIG.demoMode;
+    });
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     ۱۷) راه‌اندازی
+     ═══════════════════════════════════════════════════════════ */
+  function init() {
+    document.documentElement.classList.add('js');
+
+    applyConfig();
+    renderChips();
+    renderProducts();
+    wireImages(document);
+    observeReveals(document);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+})();
+</script>
+</body>
+</html>
+```
