@@ -1,0 +1,10 @@
+name = "avin-fashion"
+pages_build_output_dir = "dist"
+compatibility_date = "2024-05-01"
+
+# اتصال به دیتابیس کلادفلر (Cloudflare D1)
+# در پنل کلادفلر در بخش Settings -> Bindings یک D1 با نام متغیر DB متصل کنید
+[[d1_databases]]
+binding = "DB"
+database_name = "avin-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
