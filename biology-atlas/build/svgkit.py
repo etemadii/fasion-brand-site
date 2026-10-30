@@ -22,6 +22,11 @@ PAPER    = "#ffffff"
 
 FA = "۰۱۲۳۴۵۶۷۸۹"
 
+# The plates are drawn on a 900-unit canvas that is printed at ≈584 px (154 mm).
+# Everything below 11 units would drop under ~7 pt on paper, so it is scaled up.
+MIN_READ = 10.5
+MIN_SCALE = 1.15
+
 
 def fa(n):
     """Latin number -> Persian digits (keeps separators)."""
@@ -34,6 +39,8 @@ def esc(s):
 
 def txt(x, y, s, size=15, fill=INK, anchor="middle", weight="400",
         family="Noto Sans Arabic", opacity=1.0, extra=""):
+    if size < MIN_READ:
+        size = size * MIN_SCALE
     return (f'<text x="{x:.1f}" y="{y:.1f}" font-size="{size}" fill="{fill}" '
             f'font-family="{family}" font-weight="{weight}" text-anchor="{anchor}" '
             f'opacity="{opacity}" {extra}>{esc(s)}</text>')
@@ -41,6 +48,8 @@ def txt(x, y, s, size=15, fill=INK, anchor="middle", weight="400",
 
 def latin(x, y, s, size=13, fill=INK_SOFT, anchor="middle", weight="400", style="italic"):
     """Latin / numeric snippet that must stay LTR (units, gene names, Hz...)."""
+    if size < MIN_READ:
+        size = size * MIN_SCALE
     return (f'<text x="{x:.1f}" y="{y:.1f}" font-size="{size}" fill="{fill}" '
             f'font-family="DejaVu Sans" font-weight="{weight}" text-anchor="{anchor}" '
             f'font-style="{style}" direction="ltr">{esc(s)}</text>')
@@ -69,9 +78,11 @@ def circle(cx, cy, r, fill="none", stroke=INK, sw=1.2, opacity=1.0, extra=""):
             f'stroke="{stroke}" stroke-width="{sw}" opacity="{opacity}" {extra}/>')
 
 
-def ellipse(cx, cy, rx, ry, fill="none", stroke=INK, sw=1.2, opacity=1.0, extra=""):
+def ellipse(cx, cy, rx, ry, fill="none", stroke=INK, sw=1.2, opacity=1.0, extra="",
+            dash=None):
+    d = f' stroke-dasharray="{dash}"' if dash else ""
     return (f'<ellipse cx="{cx:.1f}" cy="{cy:.1f}" rx="{rx:.1f}" ry="{ry:.1f}" '
-            f'fill="{fill}" stroke="{stroke}" stroke-width="{sw}" opacity="{opacity}" {extra}/>')
+            f'fill="{fill}" stroke="{stroke}" stroke-width="{sw}" opacity="{opacity}"{d} {extra}/>')
 
 
 def poly(points, fill="none", stroke=INK, sw=1.2, opacity=1.0, extra=""):
@@ -159,9 +170,11 @@ def defs(extra=""):
 
 
 def svg(w, h, body, extra_defs="", bg=PAPER, cls="plate"):
+    # direction="ltr" keeps text-anchor semantics independent of the page dir=rtl,
+    # so the plates look identical in the atlas and in isolation.
     return (f'<svg class="{cls}" viewBox="0 0 {w} {h}" width="100%" '
             f'preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" '
-            f'role="img">\n{defs(extra_defs)}\n'
+            f'direction="ltr" role="img">\n{defs(extra_defs)}\n'
             f'<rect width="{w}" height="{h}" fill="{bg}"/>\n{body}\n</svg>\n')
 
 
